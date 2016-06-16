@@ -15,6 +15,10 @@
 		024252CA1D13162400C0DE09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 024252C81D13162400C0DE09 /* LaunchScreen.storyboard */; };
 		024252D51D13162400C0DE09 /* Vigilant_SupportTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024252D41D13162400C0DE09 /* Vigilant_SupportTests.swift */; };
 		024252E01D13162400C0DE09 /* Vigilant_SupportUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024252DF1D13162400C0DE09 /* Vigilant_SupportUITests.swift */; };
+		024252EE1D13171C00C0DE09 /* loginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024252ED1D13171C00C0DE09 /* loginController.swift */; };
+		23CB331CF2F5DA8594EBE3FA /* Pods_Vigilant_SupportTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F93ACE17F68AE0361B7E85E /* Pods_Vigilant_SupportTests.framework */; };
+		7FCE3948B30BCE1B2E11F83C /* Pods_Vigilant_Support.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06EB92382890C87A936B7111 /* Pods_Vigilant_Support.framework */; };
+		8C11FB8E3852C60CB5BE1BA7 /* Pods_Vigilant_SupportUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A46E4C4098A8F01425A63DB5 /* Pods_Vigilant_SupportUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,16 @@
 		024252DB1D13162400C0DE09 /* Vigilant SupportUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Vigilant SupportUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		024252DF1D13162400C0DE09 /* Vigilant_SupportUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vigilant_SupportUITests.swift; sourceTree = "<group>"; };
 		024252E11D13162400C0DE09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		024252ED1D13171C00C0DE09 /* loginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginController.swift; sourceTree = "<group>"; };
+		06EB92382890C87A936B7111 /* Pods_Vigilant_Support.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vigilant_Support.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F93ACE17F68AE0361B7E85E /* Pods_Vigilant_SupportTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vigilant_SupportTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C6BED6DE8750A5705B68B7B /* Pods-Vigilant SupportTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vigilant SupportTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Vigilant SupportTests/Pods-Vigilant SupportTests.release.xcconfig"; sourceTree = "<group>"; };
+		3FFF1EA13CA4F6718806FADB /* Pods-Vigilant Support.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vigilant Support.release.xcconfig"; path = "Pods/Target Support Files/Pods-Vigilant Support/Pods-Vigilant Support.release.xcconfig"; sourceTree = "<group>"; };
+		56AE1E749F49FD02E9940576 /* Pods-Vigilant SupportTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vigilant SupportTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Vigilant SupportTests/Pods-Vigilant SupportTests.debug.xcconfig"; sourceTree = "<group>"; };
+		59DA81820FF1ACC6955AAF07 /* Pods-Vigilant SupportUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vigilant SupportUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Vigilant SupportUITests/Pods-Vigilant SupportUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		62FE4B63EBC74BB7D2F691C8 /* Pods-Vigilant Support.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vigilant Support.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Vigilant Support/Pods-Vigilant Support.debug.xcconfig"; sourceTree = "<group>"; };
+		A46E4C4098A8F01425A63DB5 /* Pods_Vigilant_SupportUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vigilant_SupportUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C56B1657F968EB8BA9395374 /* Pods-Vigilant SupportUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vigilant SupportUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Vigilant SupportUITests/Pods-Vigilant SupportUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FCE3948B30BCE1B2E11F83C /* Pods_Vigilant_Support.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23CB331CF2F5DA8594EBE3FA /* Pods_Vigilant_SupportTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C11FB8E3852C60CB5BE1BA7 /* Pods_Vigilant_SupportUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +100,8 @@
 				024252D31D13162400C0DE09 /* Vigilant SupportTests */,
 				024252DE1D13162400C0DE09 /* Vigilant SupportUITests */,
 				024252BB1D13162400C0DE09 /* Products */,
+				6A149869B8B93CBD79CA7518 /* Pods */,
+				60DA8520E620A4403ED3480D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,6 +125,7 @@
 				024252C61D13162400C0DE09 /* Assets.xcassets */,
 				024252C81D13162400C0DE09 /* LaunchScreen.storyboard */,
 				024252CB1D13162400C0DE09 /* Info.plist */,
+				024252ED1D13171C00C0DE09 /* loginController.swift */,
 			);
 			path = "Vigilant Support";
 			sourceTree = "<group>";
@@ -128,6 +148,29 @@
 			path = "Vigilant SupportUITests";
 			sourceTree = "<group>";
 		};
+		60DA8520E620A4403ED3480D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				06EB92382890C87A936B7111 /* Pods_Vigilant_Support.framework */,
+				1F93ACE17F68AE0361B7E85E /* Pods_Vigilant_SupportTests.framework */,
+				A46E4C4098A8F01425A63DB5 /* Pods_Vigilant_SupportUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6A149869B8B93CBD79CA7518 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				62FE4B63EBC74BB7D2F691C8 /* Pods-Vigilant Support.debug.xcconfig */,
+				3FFF1EA13CA4F6718806FADB /* Pods-Vigilant Support.release.xcconfig */,
+				56AE1E749F49FD02E9940576 /* Pods-Vigilant SupportTests.debug.xcconfig */,
+				3C6BED6DE8750A5705B68B7B /* Pods-Vigilant SupportTests.release.xcconfig */,
+				59DA81820FF1ACC6955AAF07 /* Pods-Vigilant SupportUITests.debug.xcconfig */,
+				C56B1657F968EB8BA9395374 /* Pods-Vigilant SupportUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +178,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 024252E41D13162400C0DE09 /* Build configuration list for PBXNativeTarget "Vigilant Support" */;
 			buildPhases = (
+				D85EF00B98A6EA2988176CE0 /* [CP] Check Pods Manifest.lock */,
 				024252B61D13162400C0DE09 /* Sources */,
 				024252B71D13162400C0DE09 /* Frameworks */,
 				024252B81D13162400C0DE09 /* Resources */,
+				063C877BCAFFE91EACAF50EB /* [CP] Embed Pods Frameworks */,
+				405BBB9A61C50F731F7CBA8C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,9 +198,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 024252E71D13162400C0DE09 /* Build configuration list for PBXNativeTarget "Vigilant SupportTests" */;
 			buildPhases = (
+				0F3CBB1F3CD9B8689015EAAE /* [CP] Check Pods Manifest.lock */,
 				024252CC1D13162400C0DE09 /* Sources */,
 				024252CD1D13162400C0DE09 /* Frameworks */,
 				024252CE1D13162400C0DE09 /* Resources */,
+				26CEC37B951910611779B143 /* [CP] Embed Pods Frameworks */,
+				9F6A3D63164E35776BCBF3F3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -170,9 +219,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 024252EA1D13162400C0DE09 /* Build configuration list for PBXNativeTarget "Vigilant SupportUITests" */;
 			buildPhases = (
+				670234533A965CED4FA4911A /* [CP] Check Pods Manifest.lock */,
 				024252D71D13162400C0DE09 /* Sources */,
 				024252D81D13162400C0DE09 /* Frameworks */,
 				024252D91D13162400C0DE09 /* Resources */,
+				66A6F61C39AB18A74B046D50 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -254,12 +305,136 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		063C877BCAFFE91EACAF50EB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Vigilant Support/Pods-Vigilant Support-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0F3CBB1F3CD9B8689015EAAE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		26CEC37B951910611779B143 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Vigilant SupportTests/Pods-Vigilant SupportTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		405BBB9A61C50F731F7CBA8C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Vigilant Support/Pods-Vigilant Support-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		66A6F61C39AB18A74B046D50 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Vigilant SupportUITests/Pods-Vigilant SupportUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		670234533A965CED4FA4911A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9F6A3D63164E35776BCBF3F3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Vigilant SupportTests/Pods-Vigilant SupportTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D85EF00B98A6EA2988176CE0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		024252B61D13162400C0DE09 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				024252C21D13162400C0DE09 /* SecondViewController.swift in Sources */,
+				024252EE1D13171C00C0DE09 /* loginController.swift in Sources */,
 				024252BE1D13162400C0DE09 /* AppDelegate.swift in Sources */,
 				024252C01D13162400C0DE09 /* FirstViewController.swift in Sources */,
 			);
@@ -403,6 +578,7 @@
 		};
 		024252E51D13162400C0DE09 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62FE4B63EBC74BB7D2F691C8 /* Pods-Vigilant Support.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Vigilant Support/Info.plist";
@@ -414,6 +590,7 @@
 		};
 		024252E61D13162400C0DE09 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FFF1EA13CA4F6718806FADB /* Pods-Vigilant Support.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Vigilant Support/Info.plist";
@@ -425,6 +602,7 @@
 		};
 		024252E81D13162400C0DE09 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56AE1E749F49FD02E9940576 /* Pods-Vigilant SupportTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "Vigilant SupportTests/Info.plist";
@@ -437,6 +615,7 @@
 		};
 		024252E91D13162400C0DE09 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C6BED6DE8750A5705B68B7B /* Pods-Vigilant SupportTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "Vigilant SupportTests/Info.plist";
@@ -449,6 +628,7 @@
 		};
 		024252EB1D13162400C0DE09 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59DA81820FF1ACC6955AAF07 /* Pods-Vigilant SupportUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = "Vigilant SupportUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -460,6 +640,7 @@
 		};
 		024252EC1D13162400C0DE09 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C56B1657F968EB8BA9395374 /* Pods-Vigilant SupportUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = "Vigilant SupportUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -488,6 +669,7 @@
 				024252E61D13162400C0DE09 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		024252E71D13162400C0DE09 /* Build configuration list for PBXNativeTarget "Vigilant SupportTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +678,7 @@
 				024252E91D13162400C0DE09 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		024252EA1D13162400C0DE09 /* Build configuration list for PBXNativeTarget "Vigilant SupportUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +687,7 @@
 				024252EC1D13162400C0DE09 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
