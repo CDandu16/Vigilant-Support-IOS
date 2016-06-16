@@ -1,0 +1,511 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		024252BE1D13162400C0DE09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024252BD1D13162400C0DE09 /* AppDelegate.swift */; };
+		024252C01D13162400C0DE09 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024252BF1D13162400C0DE09 /* FirstViewController.swift */; };
+		024252C21D13162400C0DE09 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024252C11D13162400C0DE09 /* SecondViewController.swift */; };
+		024252C51D13162400C0DE09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 024252C31D13162400C0DE09 /* Main.storyboard */; };
+		024252C71D13162400C0DE09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 024252C61D13162400C0DE09 /* Assets.xcassets */; };
+		024252CA1D13162400C0DE09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 024252C81D13162400C0DE09 /* LaunchScreen.storyboard */; };
+		024252D51D13162400C0DE09 /* Vigilant_SupportTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024252D41D13162400C0DE09 /* Vigilant_SupportTests.swift */; };
+		024252E01D13162400C0DE09 /* Vigilant_SupportUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024252DF1D13162400C0DE09 /* Vigilant_SupportUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		024252D11D13162400C0DE09 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 024252B21D13162400C0DE09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 024252B91D13162400C0DE09;
+			remoteInfo = "Vigilant Support";
+		};
+		024252DC1D13162400C0DE09 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 024252B21D13162400C0DE09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 024252B91D13162400C0DE09;
+			remoteInfo = "Vigilant Support";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		024252BA1D13162400C0DE09 /* Vigilant Support.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Vigilant Support.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		024252BD1D13162400C0DE09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		024252BF1D13162400C0DE09 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		024252C11D13162400C0DE09 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		024252C41D13162400C0DE09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		024252C61D13162400C0DE09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		024252C91D13162400C0DE09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		024252CB1D13162400C0DE09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		024252D01D13162400C0DE09 /* Vigilant SupportTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Vigilant SupportTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		024252D41D13162400C0DE09 /* Vigilant_SupportTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vigilant_SupportTests.swift; sourceTree = "<group>"; };
+		024252D61D13162400C0DE09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		024252DB1D13162400C0DE09 /* Vigilant SupportUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Vigilant SupportUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		024252DF1D13162400C0DE09 /* Vigilant_SupportUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vigilant_SupportUITests.swift; sourceTree = "<group>"; };
+		024252E11D13162400C0DE09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		024252B71D13162400C0DE09 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		024252CD1D13162400C0DE09 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		024252D81D13162400C0DE09 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		024252B11D13162400C0DE09 = {
+			isa = PBXGroup;
+			children = (
+				024252BC1D13162400C0DE09 /* Vigilant Support */,
+				024252D31D13162400C0DE09 /* Vigilant SupportTests */,
+				024252DE1D13162400C0DE09 /* Vigilant SupportUITests */,
+				024252BB1D13162400C0DE09 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		024252BB1D13162400C0DE09 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				024252BA1D13162400C0DE09 /* Vigilant Support.app */,
+				024252D01D13162400C0DE09 /* Vigilant SupportTests.xctest */,
+				024252DB1D13162400C0DE09 /* Vigilant SupportUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		024252BC1D13162400C0DE09 /* Vigilant Support */ = {
+			isa = PBXGroup;
+			children = (
+				024252BD1D13162400C0DE09 /* AppDelegate.swift */,
+				024252BF1D13162400C0DE09 /* FirstViewController.swift */,
+				024252C11D13162400C0DE09 /* SecondViewController.swift */,
+				024252C31D13162400C0DE09 /* Main.storyboard */,
+				024252C61D13162400C0DE09 /* Assets.xcassets */,
+				024252C81D13162400C0DE09 /* LaunchScreen.storyboard */,
+				024252CB1D13162400C0DE09 /* Info.plist */,
+			);
+			path = "Vigilant Support";
+			sourceTree = "<group>";
+		};
+		024252D31D13162400C0DE09 /* Vigilant SupportTests */ = {
+			isa = PBXGroup;
+			children = (
+				024252D41D13162400C0DE09 /* Vigilant_SupportTests.swift */,
+				024252D61D13162400C0DE09 /* Info.plist */,
+			);
+			path = "Vigilant SupportTests";
+			sourceTree = "<group>";
+		};
+		024252DE1D13162400C0DE09 /* Vigilant SupportUITests */ = {
+			isa = PBXGroup;
+			children = (
+				024252DF1D13162400C0DE09 /* Vigilant_SupportUITests.swift */,
+				024252E11D13162400C0DE09 /* Info.plist */,
+			);
+			path = "Vigilant SupportUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		024252B91D13162400C0DE09 /* Vigilant Support */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 024252E41D13162400C0DE09 /* Build configuration list for PBXNativeTarget "Vigilant Support" */;
+			buildPhases = (
+				024252B61D13162400C0DE09 /* Sources */,
+				024252B71D13162400C0DE09 /* Frameworks */,
+				024252B81D13162400C0DE09 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Vigilant Support";
+			productName = "Vigilant Support";
+			productReference = 024252BA1D13162400C0DE09 /* Vigilant Support.app */;
+			productType = "com.apple.product-type.application";
+		};
+		024252CF1D13162400C0DE09 /* Vigilant SupportTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 024252E71D13162400C0DE09 /* Build configuration list for PBXNativeTarget "Vigilant SupportTests" */;
+			buildPhases = (
+				024252CC1D13162400C0DE09 /* Sources */,
+				024252CD1D13162400C0DE09 /* Frameworks */,
+				024252CE1D13162400C0DE09 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				024252D21D13162400C0DE09 /* PBXTargetDependency */,
+			);
+			name = "Vigilant SupportTests";
+			productName = "Vigilant SupportTests";
+			productReference = 024252D01D13162400C0DE09 /* Vigilant SupportTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		024252DA1D13162400C0DE09 /* Vigilant SupportUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 024252EA1D13162400C0DE09 /* Build configuration list for PBXNativeTarget "Vigilant SupportUITests" */;
+			buildPhases = (
+				024252D71D13162400C0DE09 /* Sources */,
+				024252D81D13162400C0DE09 /* Frameworks */,
+				024252D91D13162400C0DE09 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				024252DD1D13162400C0DE09 /* PBXTargetDependency */,
+			);
+			name = "Vigilant SupportUITests";
+			productName = "Vigilant SupportUITests";
+			productReference = 024252DB1D13162400C0DE09 /* Vigilant SupportUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		024252B21D13162400C0DE09 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Vigilant Technologies";
+				TargetAttributes = {
+					024252B91D13162400C0DE09 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					024252CF1D13162400C0DE09 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 024252B91D13162400C0DE09;
+					};
+					024252DA1D13162400C0DE09 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 024252B91D13162400C0DE09;
+					};
+				};
+			};
+			buildConfigurationList = 024252B51D13162400C0DE09 /* Build configuration list for PBXProject "Vigilant Support" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 024252B11D13162400C0DE09;
+			productRefGroup = 024252BB1D13162400C0DE09 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				024252B91D13162400C0DE09 /* Vigilant Support */,
+				024252CF1D13162400C0DE09 /* Vigilant SupportTests */,
+				024252DA1D13162400C0DE09 /* Vigilant SupportUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		024252B81D13162400C0DE09 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				024252CA1D13162400C0DE09 /* LaunchScreen.storyboard in Resources */,
+				024252C71D13162400C0DE09 /* Assets.xcassets in Resources */,
+				024252C51D13162400C0DE09 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		024252CE1D13162400C0DE09 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		024252D91D13162400C0DE09 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		024252B61D13162400C0DE09 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				024252C21D13162400C0DE09 /* SecondViewController.swift in Sources */,
+				024252BE1D13162400C0DE09 /* AppDelegate.swift in Sources */,
+				024252C01D13162400C0DE09 /* FirstViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		024252CC1D13162400C0DE09 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				024252D51D13162400C0DE09 /* Vigilant_SupportTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		024252D71D13162400C0DE09 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				024252E01D13162400C0DE09 /* Vigilant_SupportUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		024252D21D13162400C0DE09 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 024252B91D13162400C0DE09 /* Vigilant Support */;
+			targetProxy = 024252D11D13162400C0DE09 /* PBXContainerItemProxy */;
+		};
+		024252DD1D13162400C0DE09 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 024252B91D13162400C0DE09 /* Vigilant Support */;
+			targetProxy = 024252DC1D13162400C0DE09 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		024252C31D13162400C0DE09 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				024252C41D13162400C0DE09 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		024252C81D13162400C0DE09 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				024252C91D13162400C0DE09 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		024252E21D13162400C0DE09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		024252E31D13162400C0DE09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		024252E51D13162400C0DE09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Vigilant Support/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vigt.Vigilant-Support";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		024252E61D13162400C0DE09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Vigilant Support/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vigt.Vigilant-Support";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		024252E81D13162400C0DE09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Vigilant SupportTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vigt.Vigilant-SupportTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vigilant Support.app/Vigilant Support";
+			};
+			name = Debug;
+		};
+		024252E91D13162400C0DE09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Vigilant SupportTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vigt.Vigilant-SupportTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vigilant Support.app/Vigilant Support";
+			};
+			name = Release;
+		};
+		024252EB1D13162400C0DE09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Vigilant SupportUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vigt.Vigilant-SupportUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Vigilant Support";
+			};
+			name = Debug;
+		};
+		024252EC1D13162400C0DE09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Vigilant SupportUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vigt.Vigilant-SupportUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Vigilant Support";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		024252B51D13162400C0DE09 /* Build configuration list for PBXProject "Vigilant Support" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				024252E21D13162400C0DE09 /* Debug */,
+				024252E31D13162400C0DE09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		024252E41D13162400C0DE09 /* Build configuration list for PBXNativeTarget "Vigilant Support" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				024252E51D13162400C0DE09 /* Debug */,
+				024252E61D13162400C0DE09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		024252E71D13162400C0DE09 /* Build configuration list for PBXNativeTarget "Vigilant SupportTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				024252E81D13162400C0DE09 /* Debug */,
+				024252E91D13162400C0DE09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		024252EA1D13162400C0DE09 /* Build configuration list for PBXNativeTarget "Vigilant SupportUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				024252EB1D13162400C0DE09 /* Debug */,
+				024252EC1D13162400C0DE09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 024252B21D13162400C0DE09 /* Project object */;
+}
