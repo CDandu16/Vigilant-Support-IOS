@@ -16,6 +16,9 @@
 		024252D51D13162400C0DE09 /* Vigilant_SupportTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024252D41D13162400C0DE09 /* Vigilant_SupportTests.swift */; };
 		024252E01D13162400C0DE09 /* Vigilant_SupportUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024252DF1D13162400C0DE09 /* Vigilant_SupportUITests.swift */; };
 		024252EE1D13171C00C0DE09 /* loginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024252ED1D13171C00C0DE09 /* loginController.swift */; };
+		02993A2A1D198288001C3615 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02993A291D198288001C3615 /* Project.swift */; };
+		02993A301D198747001C3615 /* projectModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02993A2F1D198747001C3615 /* projectModel.swift */; };
+		02993A341D19887F001C3615 /* ProjectTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02993A331D19887F001C3615 /* ProjectTableViewController.swift */; };
 		23CB331CF2F5DA8594EBE3FA /* Pods_Vigilant_SupportTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F93ACE17F68AE0361B7E85E /* Pods_Vigilant_SupportTests.framework */; };
 		7FCE3948B30BCE1B2E11F83C /* Pods_Vigilant_Support.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06EB92382890C87A936B7111 /* Pods_Vigilant_Support.framework */; };
 		8C11FB8E3852C60CB5BE1BA7 /* Pods_Vigilant_SupportUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A46E4C4098A8F01425A63DB5 /* Pods_Vigilant_SupportUITests.framework */; };
@@ -54,6 +57,9 @@
 		024252DF1D13162400C0DE09 /* Vigilant_SupportUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vigilant_SupportUITests.swift; sourceTree = "<group>"; };
 		024252E11D13162400C0DE09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		024252ED1D13171C00C0DE09 /* loginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginController.swift; sourceTree = "<group>"; };
+		02993A291D198288001C3615 /* Project.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
+		02993A2F1D198747001C3615 /* projectModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = projectModel.swift; sourceTree = "<group>"; };
+		02993A331D19887F001C3615 /* ProjectTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectTableViewController.swift; sourceTree = "<group>"; };
 		06EB92382890C87A936B7111 /* Pods_Vigilant_Support.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vigilant_Support.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F93ACE17F68AE0361B7E85E /* Pods_Vigilant_SupportTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vigilant_SupportTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C6BED6DE8750A5705B68B7B /* Pods-Vigilant SupportTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vigilant SupportTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Vigilant SupportTests/Pods-Vigilant SupportTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -126,6 +132,9 @@
 				024252C81D13162400C0DE09 /* LaunchScreen.storyboard */,
 				024252CB1D13162400C0DE09 /* Info.plist */,
 				024252ED1D13171C00C0DE09 /* loginController.swift */,
+				02993A291D198288001C3615 /* Project.swift */,
+				02993A2F1D198747001C3615 /* projectModel.swift */,
+				02993A331D19887F001C3615 /* ProjectTableViewController.swift */,
 			);
 			path = "Vigilant Support";
 			sourceTree = "<group>";
@@ -436,6 +445,9 @@
 				024252C21D13162400C0DE09 /* SecondViewController.swift in Sources */,
 				024252EE1D13171C00C0DE09 /* loginController.swift in Sources */,
 				024252BE1D13162400C0DE09 /* AppDelegate.swift in Sources */,
+				02993A2A1D198288001C3615 /* Project.swift in Sources */,
+				02993A301D198747001C3615 /* projectModel.swift in Sources */,
+				02993A341D19887F001C3615 /* ProjectTableViewController.swift in Sources */,
 				024252C01D13162400C0DE09 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
