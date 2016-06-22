@@ -21,7 +21,10 @@ class ProjectTableViewController: UITableViewController {
     let childCellIdentifier = "ChildCell"
     
     /// The data source
-    var dataSource: [Parent]!
+    var dataSource: [Parent] = []
+    
+    //The people
+    var person: [Person]!
     
     /// Define wether can exist several cells expanded or not.
     let numberOfCellsExpanded: NumberOfCellExpanded = .One
@@ -51,12 +54,13 @@ class ProjectTableViewController: UITableViewController {
                 let json = JSON(JSONValues)
                 if let projects = json["Projects"].array{
                     for project in projects {
-                        let child1 = Person(name: project["first_name"].string!, phone: project["first_telephone"].string!, email: project["first_email"].string!)
-                        let child2 = Person(name: project["secondary_name"].string!, phone: project["secondary_telephone"].string!, email: project["secondary_email"].string!)
-                        let child3 = Person(name: project["third_name"].string!, phone: project["third_telephone"].string!, email: project["third_email"].string!)
-                        let child4 = Person(name: project["fourth_name"].string!, phone: project["fourth_telephone"].string!, email: project["fourth_email"].string!)
-                        let child5 = Person(name: project["fifth_name"].string!, phone: project["fifth_telephone"].string!, email: project["fifth_email"].string!)
-                        self.dataSource.append(Parent(state: .Collapsed, childs: [child1,child2,child3,child4,child5], title: project["name"].string!))
+                        let child1 = Person(name: project["first_name"].stringValue, phone: project["first_telephone"].stringValue, email: project["first_email"].stringValue)
+                        let child2 = Person(name: project["secondary_name"].stringValue, phone: project["secondary_telephone"].stringValue, email: project["secondary_email"].stringValue)
+                        let child3 = Person(name: project["third_name"].stringValue, phone: project["third_telephone"].stringValue, email: project["third_email"].stringValue)
+                        let child4 = Person(name: project["fourth_name"].stringValue, phone: project["fourth_telephone"].stringValue, email: project["fourth_email"].stringValue)
+                        let child5 = Person(name: project["fifth_name"].stringValue, phone: project["fifth_telephone"].stringValue, email: project["fifth_email"].stringValue)
+                        self.total=projects.count
+                        self.dataSource .append(Parent(state: .Collapsed, childs: [child1,child2,child3,child4,child5], title: project["name"].stringValue))
                     }
                 }
             }
@@ -255,7 +259,7 @@ extension ProjectTableViewController {
         
         if !isParentCell {
             cell = tableView.dequeueReusableCellWithIdentifier(childCellIdentifier, forIndexPath: indexPath)
-//            cell.textLabel!.text = self.dataSource[parent].childs[indexPath.row - actualPosition - 1]
+            cell.textLabel!.text = self.dataSource[parent].childs[indexPath.row - actualPosition - 1].name
 //            cell.backgroundColor = UIColor.greenColor()
         }
         else {

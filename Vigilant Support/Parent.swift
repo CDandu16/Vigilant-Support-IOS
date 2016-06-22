@@ -43,7 +43,7 @@ struct Parent {
     var childs: [Person]
     
     /// The title for the cell.
-    var title: String
+    var title: String?
 }
 
 /**
