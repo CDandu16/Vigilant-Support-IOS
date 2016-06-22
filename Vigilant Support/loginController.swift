@@ -13,7 +13,7 @@ import SwiftyJSON
 class loginController: UIViewController {
     
     @IBOutlet weak var emailInput: UITextField!
-    
+
     @IBAction func LoginButton(sender: AnyObject) {
         let validLogin = isValidEmail(emailInput.text!)
         if validLogin {
@@ -27,6 +27,7 @@ class loginController: UIViewController {
                 let user = json["Users"].stringValue
                 print(user)
                 if(user == "client"){
+                    GlobalV.email = self.emailInput.text!
                     self.performSegueWithIdentifier("nextView", sender: self)
                 }else if(user == "employee"){
                 
