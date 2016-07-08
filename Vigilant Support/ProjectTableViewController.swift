@@ -34,7 +34,9 @@ class ProjectTableViewController: UITableViewController {
     
     /// The index of the last cell expanded and its parent.
     var lastCellExpanded : (Int, Int)!
-    
+
+
+    @IBOutlet weak var emlBttn: UITableViewCell!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -259,8 +261,18 @@ extension ProjectTableViewController {
         
         if !isParentCell {
             cell = tableView.dequeueReusableCellWithIdentifier(childCellIdentifier, forIndexPath: indexPath)
-            cell.textLabel!.text = self.dataSource[parent].childs[indexPath.row - actualPosition - 1].name
-//            cell.backgroundColor = UIColor.greenColor()
+            let child = self.view.viewWithTag(100) as? UILabel
+            child!.text =  self.dataSource[parent].childs[indexPath.row - actualPosition - 1].name
+            
+            let emlBtn = self.view.viewWithTag(10) as? subclassedUIButton
+            let callBtn = self.view.viewWithTag(20) as? subclassedUIButton
+            let txtBtn = self.view.viewWithTag(30) as? subclassedUIButton
+            emlBtn?.string = self.dataSource[parent].childs[indexPath.row - actualPosition - 1].email
+            callBtn?.string = self.dataSource[parent].childs[indexPath.row - actualPosition - 1].phone
+            txtBtn?.string = self.dataSource[parent].childs[indexPath.row - actualPosition - 1].phone
+            emlBtn?.addTarget(self, action: #selector(ProjectTableViewController.emlBtn(_:)), forControlEvents: .TouchUpInside)
+            callBtn?.addTarget(self, action: #selector(ProjectTableViewController.callBtn(_:)), forControlEvents: .TouchUpInside)
+            txtBtn?.addTarget(self, action: #selector(ProjectTableViewController.txtBtn(_:)), forControlEvents: .TouchUpInside)
         }
         else {
             cell = tableView.dequeueReusableCellWithIdentifier(parentCellIdentifier, forIndexPath: indexPath)
@@ -270,13 +282,42 @@ extension ProjectTableViewController {
         return cell
     }
     
+    //This compsoses the email to send
+    func emlBtn(sender: subclassedUIButton){
+        NSLog(sender.string!)
+        let email = sender.string!
+        let url = NSURL(string: "mailto:\(email)")!
+        UIApplication.sharedApplication().openURL(url)
+    }
+    
+    //This will open the call button
+    func callBtn(sender: subclassedUIButton){
+        NSLog(sender.string!)
+        let phone = sender.string!
+        let url = NSURL(string: "tel://\(phone)")!
+        UIApplication.sharedApplication().openURL(url)
+    }
+    
+    func txtBtn(sender: subclassedUIButton){
+        NSLog(sender.string!)
+        let sms = sender.string!
+        let url = NSURL(string: "sms://\(sms)")!
+        UIApplication.sharedApplication().openURL(url)
+    }
+
+    
+    
+    
     // MARK: UITableViewDelegate
     
+
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
         let (parent, isParentCell, actualPosition) = self.findParent(indexPath.row)
         
         guard isParentCell else {
+            
+                        
             NSLog("A child was tapped!!!")
             
             // The value of the child is indexPath.row - actualPosition - 1

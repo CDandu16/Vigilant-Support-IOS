@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0200FB8A1D1AD5C500798AAA /* Parent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0200FB891D1AD5C500798AAA /* Parent.swift */; };
+		020F98601D2FD9850083F237 /* subButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020F985F1D2FD9850083F237 /* subButton.swift */; };
 		024252BE1D13162400C0DE09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024252BD1D13162400C0DE09 /* AppDelegate.swift */; };
 		024252C01D13162400C0DE09 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024252BF1D13162400C0DE09 /* FirstViewController.swift */; };
 		024252C21D13162400C0DE09 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024252C11D13162400C0DE09 /* SecondViewController.swift */; };
@@ -46,6 +47,7 @@
 
 /* Begin PBXFileReference section */
 		0200FB891D1AD5C500798AAA /* Parent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parent.swift; sourceTree = "<group>"; };
+		020F985F1D2FD9850083F237 /* subButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = subButton.swift; sourceTree = "<group>"; };
 		024252BA1D13162400C0DE09 /* Vigilant Support.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Vigilant Support.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		024252BD1D13162400C0DE09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		024252BF1D13162400C0DE09 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 				024252BF1D13162400C0DE09 /* FirstViewController.swift */,
 				024252C11D13162400C0DE09 /* SecondViewController.swift */,
 				024252C31D13162400C0DE09 /* Main.storyboard */,
+				020F985F1D2FD9850083F237 /* subButton.swift */,
 				024252C61D13162400C0DE09 /* Assets.xcassets */,
 				024252C81D13162400C0DE09 /* LaunchScreen.storyboard */,
 				024252CB1D13162400C0DE09 /* Info.plist */,
@@ -455,6 +458,7 @@
 				024252EE1D13171C00C0DE09 /* loginController.swift in Sources */,
 				024252BE1D13162400C0DE09 /* AppDelegate.swift in Sources */,
 				02993A3C1D19B2B9001C3615 /* Person.swift in Sources */,
+				020F98601D2FD9850083F237 /* subButton.swift in Sources */,
 				02993A2A1D198288001C3615 /* Project.swift in Sources */,
 				02993A301D198747001C3615 /* projectModel.swift in Sources */,
 				02993A341D19887F001C3615 /* ProjectTableViewController.swift in Sources */,
