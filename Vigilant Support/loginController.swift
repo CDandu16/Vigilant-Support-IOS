@@ -28,7 +28,7 @@ class loginController: UIViewController {
                 print(user)
                 if(user == "client"){
                     GlobalV.email = self.emailInput.text!
-                    self.performSegueWithIdentifier("nextView", sender: self)
+                    self.performSegueWithIdentifier("attempt", sender: self)
                 }else if(user == "employee"){
                 
                 }else{
