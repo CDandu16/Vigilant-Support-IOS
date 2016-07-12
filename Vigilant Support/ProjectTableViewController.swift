@@ -263,6 +263,7 @@ extension ProjectTableViewController {
             cell = tableView.dequeueReusableCellWithIdentifier(childCellIdentifier, forIndexPath: indexPath)
             let child = self.view.viewWithTag(100) as? UILabel
             child!.text =  self.dataSource[parent].childs[indexPath.row - actualPosition - 1].name
+            child!.textAlignment = .Center
             
             let emlBtn = self.view.viewWithTag(10) as? subclassedUIButton
             let callBtn = self.view.viewWithTag(20) as? subclassedUIButton
@@ -277,6 +278,7 @@ extension ProjectTableViewController {
         else {
             cell = tableView.dequeueReusableCellWithIdentifier(parentCellIdentifier, forIndexPath: indexPath)
             cell.textLabel!.text = self.dataSource[parent].title
+            cell.textLabel!.textColor = UIColor.whiteColor();
         }
         
         return cell
@@ -292,10 +294,25 @@ extension ProjectTableViewController {
     
     //This will open the call button
     func callBtn(sender: subclassedUIButton){
-        NSLog(sender.string!)
-        let phone = sender.string!
-        let url = NSURL(string: "tel://\(phone)")!
-        UIApplication.sharedApplication().openURL(url)
+        let no = sender.string!
+        if(!(no.substringToIndex(no.startIndex.advancedBy(1))=="1")){
+            let alert = UIAlertController(title: "International Call", message: "This is an international call", preferredStyle: UIAlertControllerStyle.Alert)
+            alert.addAction(UIAlertAction(title: "Continue", style: UIAlertActionStyle.Default, handler: {action in
+                NSLog("it worked")
+                NSLog(sender.string!)
+                let phone = sender.string!
+                let url = NSURL(string: "tel://\(phone)")!
+                UIApplication.sharedApplication().openURL(url)
+            }))
+            alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Cancel, handler: nil))
+            self.presentViewController(alert, animated: true, completion: nil)
+        }else{
+            NSLog(sender.string!)
+            let phone = sender.string!
+            let url = NSURL(string: "tel://\(phone)")!
+            UIApplication.sharedApplication().openURL(url)
+        }
+        
     }
     
     func txtBtn(sender: subclassedUIButton){
