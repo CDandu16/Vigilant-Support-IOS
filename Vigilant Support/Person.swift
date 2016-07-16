@@ -12,32 +12,12 @@ class Person{
     var name:String?
     var phone:String?
     var email:String?
+    var project:String?
 
-    init(name: String, phone: String, email: String){
+    init(name: String, phone: String, email: String,pn: String){
         self.name = name
         self.phone = phone
         self.email = email
+        self.project = pn
     }
 }
-
-//class Person:NSObject{
-//    var name:String?
-//    var phone:String?
-//    var email:String?
-//    
-//    init(dictionary: NSDictionary){
-//        name = (dictionary["name"] as? String)
-//        phone = (dictionary["telephone"] as? String)
-//        email = (dictionary["email"] as? String)
-//    }
-//    
-//    class func peoplesInProject(array:[NSDictionary])->[Person]{
-//        var people = [Person]()
-//        
-//        for dictionary in array{
-//            people.append(Person(dictionary: dictionary))
-//        }
-//        
-//        return people
-//    }
-//}
