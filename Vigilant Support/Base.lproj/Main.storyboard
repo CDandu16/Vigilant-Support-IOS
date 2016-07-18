@@ -41,21 +41,21 @@
                                         <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uMt-9d-43B">
                                             <rect key="frame" x="48" y="5" width="504" height="290"/>
                                             <subviews>
-                                                <button opaque="NO" tag="20" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0OV-xw-UVq">
+                                                <button opaque="NO" tag="20" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0OV-xw-UVq" customClass="subclassedUIButton" customModule="Vigilant_Support" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="250" width="168" height="40"/>
                                                     <color key="backgroundColor" red="0.23137254900000001" green="0.34901960780000002" blue="0.59607843140000005" alpha="1" colorSpace="calibratedRGB"/>
                                                     <state key="normal" title="Call">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                 </button>
-                                                <button opaque="NO" tag="10" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uJa-qr-yxd">
+                                                <button opaque="NO" tag="10" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uJa-qr-yxd" customClass="subclassedUIButton" customModule="Vigilant_Support" customModuleProvider="target">
                                                     <rect key="frame" x="168" y="250" width="168" height="40"/>
                                                     <color key="backgroundColor" red="0.23137254900000001" green="0.34901960780000002" blue="0.59607843140000005" alpha="1" colorSpace="calibratedRGB"/>
                                                     <state key="normal" title="Email">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                 </button>
-                                                <button opaque="NO" tag="30" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jav-hQ-Ekh">
+                                                <button opaque="NO" tag="30" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jav-hQ-Ekh" customClass="subclassedUIButton" customModule="Vigilant_Support" customModuleProvider="target">
                                                     <rect key="frame" x="336" y="250" width="168" height="40"/>
                                                     <color key="backgroundColor" red="0.23137254900000001" green="0.34901960780000002" blue="0.59607843140000005" alpha="1" colorSpace="calibratedRGB"/>
                                                     <state key="normal" title="Text">
@@ -152,11 +152,11 @@
                                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="bottomMargin" secondItem="uJa-qr-yxd" secondAttribute="bottom" constant="-4" id="5Ug-mB-4GY"/>
-                                        <constraint firstItem="uMt-9d-43B" firstAttribute="leading" secondItem="Led-Qe-Fla" secondAttribute="leadingMargin" constant="20" id="HHm-yy-Go2"/>
+                                        <constraint firstItem="uMt-9d-43B" firstAttribute="leading" secondItem="Led-Qe-Fla" secondAttribute="leadingMargin" constant="5" id="HHm-yy-Go2"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="Jav-hQ-Ekh" secondAttribute="bottom" constant="-4" id="McA-a4-dHo"/>
                                         <constraint firstItem="uMt-9d-43B" firstAttribute="top" secondItem="Led-Qe-Fla" secondAttribute="topMargin" constant="-3" id="Ngt-WO-l5g"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="uJa-qr-yxd" secondAttribute="bottom" constant="-4" id="dkc-Md-We4"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="uMt-9d-43B" secondAttribute="trailing" constant="20" id="oH3-j1-CCz"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="uMt-9d-43B" secondAttribute="trailing" constant="5" id="oH3-j1-CCz"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="uMt-9d-43B" secondAttribute="bottom" constant="-4" id="rsu-O4-Zuz"/>
                                     </constraints>
                                     <variation key="default">
