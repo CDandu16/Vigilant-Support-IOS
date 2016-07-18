@@ -27,6 +27,7 @@ class loginController: UIViewController {
                 let user = json["Users"].stringValue
                 print(user)
                 if(user == "client"){
+                    print(self.emailInput.text!)
                     GlobalV.email = self.emailInput.text!
                     self.performSegueWithIdentifier("attempt", sender: self)
                 }else if(user == "employee"){

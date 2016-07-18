@@ -12,12 +12,10 @@ class Person{
     var name:String?
     var phone:String?
     var email:String?
-    var project:String?
 
-    init(name: String, phone: String, email: String,pn: String){
+    init(name: String, phone: String, email: String){
         self.name = name
         self.phone = phone
         self.email = email
-        self.project = pn
     }
 }

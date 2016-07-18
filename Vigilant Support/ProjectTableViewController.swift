@@ -12,10 +12,10 @@ import SwiftyJSON
 
 class ProjectTableViewController: UITableViewController {
     /// The number of elements in the data source
-    var total = 0
+    var total: Int!
     
     /// The data source
-    var dataSource: [Person] = []
+    var dataSource: [Person]!
     
     //The people
     var person: [Person]!
@@ -25,7 +25,8 @@ class ProjectTableViewController: UITableViewController {
         self.tableView.separatorColor = UIColor.clearColor();
         self.view.backgroundColor = UIColor(red: 0.9,green: 0.9,blue: 0.9, alpha: 1)
         self.tableView.backgroundColor = UIColor(red: 0.9,green: 0.9,blue: 0.9, alpha: 1)
-        self.loadProjects()
+        print(total)
+//        self.loadProjects()
     }
     
     override func didReceiveMemoryWarning() {
@@ -33,27 +34,27 @@ class ProjectTableViewController: UITableViewController {
     }
 
     //HOW DO I DO THIS 
-    func loadProjects(){
-        print("hi")
-        Alamofire.request(.GET,"http://192.168.0.71:3000/api/projects/"+GlobalV.email).responseJSON{
-            response in if let JSONValues = response.result.value{
-                let json = JSON(JSONValues)
-                if let projects = json["Projects"].array{
-                    for project in projects {
-                        let child1 = Person(name: project["first_name"].stringValue, phone: project["first_telephone"].stringValue, email: project["first_email"].stringValue,pn: project["name"].stringValue )
-                        let child2 = Person(name: project["secondary_name"].stringValue, phone: project["secondary_telephone"].stringValue, email: project["secondary_email"].stringValue,pn: project["name"].stringValue)
-                        let child3 = Person(name: project["third_name"].stringValue, phone: project["third_telephone"].stringValue, email: project["third_email"].stringValue,pn: project["name"].stringValue)
-                        let child4 = Person(name: project["fourth_name"].stringValue, phone: project["fourth_telephone"].stringValue, email: project["fourth_email"].stringValue,pn: project["name"].stringValue)
-                        let child5 = Person(name: project["fifth_name"].stringValue, phone: project["fifth_telephone"].stringValue, email: project["fifth_email"].stringValue,pn: project["name"].stringValue)
-                        self.dataSource+=[child1,child2,child3,child4,child5]
-                    }
-                    self.total = self.dataSource.count
-                }
-            }
-            self.tableView.reloadData()
-        }
-    }
-    
+//    func loadProjects(){
+//        print("hi")
+//        Alamofire.request(.GET,"http://192.168.0.71:3000/api/projects/"+GlobalV.email).responseJSON{
+//            response in if let JSONValues = response.result.value{
+//                let json = JSON(JSONValues)
+//                if let projects = json["Projects"].array{
+//                    for project in projects {
+//                        let child1 = Person(name: project["first_name"].stringValue, phone: project["first_telephone"].stringValue, email: project["first_email"].stringValue)
+//                        let child2 = Person(name: project["secondary_name"].stringValue, phone: project["secondary_telephone"].stringValue, email: project["secondary_email"].stringValue)
+//                        let child3 = Person(name: project["third_name"].stringValue, phone: project["third_telephone"].stringValue, email: project["third_email"].stringValue)
+//                        let child4 = Person(name: project["fourth_name"].stringValue, phone: project["fourth_telephone"].stringValue, email: project["fourth_email"].stringValue)
+//                        let child5 = Person(name: project["fifth_name"].stringValue, phone: project["fifth_telephone"].stringValue, email: project["fifth_email"].stringValue)
+//                        self.dataSource+=[child1,child2,child3,child4,child5]
+//                    }
+//                    self.total = self.dataSource.count
+//                }
+//            }
+//            self.tableView.reloadData()
+//        }
+//    }
+//    
    
 
     // MARK: UITableViewDataSource
