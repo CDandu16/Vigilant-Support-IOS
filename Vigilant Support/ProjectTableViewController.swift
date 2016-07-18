@@ -14,6 +14,9 @@ class ProjectTableViewController: UITableViewController {
     /// The number of elements in the data source
     var total: Int!
     
+    //name of listview
+    var projectTitle: String?
+    
     /// The data source
     var dataSource: [Person]!
     
@@ -25,6 +28,7 @@ class ProjectTableViewController: UITableViewController {
         self.tableView.separatorColor = UIColor.clearColor();
         self.view.backgroundColor = UIColor(red: 0.9,green: 0.9,blue: 0.9, alpha: 1)
         self.tableView.backgroundColor = UIColor(red: 0.9,green: 0.9,blue: 0.9, alpha: 1)
+        self.title = self.projectTitle
         print(total)
 //        self.loadProjects()
     }

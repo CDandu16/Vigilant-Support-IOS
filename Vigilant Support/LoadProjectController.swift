@@ -14,7 +14,8 @@ class LoadProjectController: UITableViewController {
     /// The number of elements in the data source
     var total = 0
     
-    //
+    // pasing data
+    var projectTitle: String?
     var totalChild: Int = 0
     var passingData = [Person]()
     
@@ -26,12 +27,15 @@ class LoadProjectController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Projects"
         self.loadProjects()
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    
+    
     
     //HOW DO I DO THIS
     func loadProjects(){
@@ -95,6 +99,7 @@ class LoadProjectController: UITableViewController {
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         self.passingData = self.dataSource[indexPath.row].childs
         self.totalChild = self.dataSource[indexPath.row].childs.count
+        self.projectTitle = self.dataSource[indexPath.row].title
         self.performSegueWithIdentifier("detailer", sender: self)
     }
     
@@ -107,6 +112,7 @@ class LoadProjectController: UITableViewController {
             let vc: ProjectTableViewController = segue.destinationViewController as! ProjectTableViewController
             vc.dataSource = self.passingData
             vc.total = self.totalChild
+            vc.projectTitle = self.projectTitle
             print("hello")
             print(vc.total)
         }

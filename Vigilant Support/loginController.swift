@@ -10,7 +10,7 @@ import UIKit
 import Alamofire
 import SwiftyJSON
 
-class loginController: UIViewController {
+class loginController: UIViewController,UITextFieldDelegate {
     
     @IBOutlet weak var emailInput: UITextField!
 
@@ -42,6 +42,8 @@ class loginController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.emailInput.delegate = self;
+        UIApplication.sharedApplication().statusBarStyle = .Default
         // Do any additional setup after loading the view, typically from a nib.
     }
     
@@ -50,11 +52,22 @@ class loginController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        
+        return false
+    }
+    
     func isValidEmail(testStr:String) -> Bool {
         let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
         let range = testStr.rangeOfString(emailRegEx, options:.RegularExpressionSearch)
         let result = range != nil ? true : false
         return result
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+        UIApplication.sharedApplication().statusBarStyle = .LightContent
     }
     
     
