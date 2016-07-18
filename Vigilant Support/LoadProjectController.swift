@@ -40,12 +40,30 @@ class LoadProjectController: UITableViewController {
                 let json = JSON(JSONValues)
                 if let projects = json["Projects"].array{
                     for project in projects {
+                        var childArray = [Person]();
                         let child1 = Person(name: project["first_name"].stringValue, phone: project["first_telephone"].stringValue, email: project["first_email"].stringValue)
+                        childArray.append(child1);
                         let child2 = Person(name: project["secondary_name"].stringValue, phone: project["secondary_telephone"].stringValue, email: project["secondary_email"].stringValue)
+                        childArray.append(child2);
                         let child3 = Person(name: project["third_name"].stringValue, phone: project["third_telephone"].stringValue, email: project["third_email"].stringValue)
+                        if(child3.name!.isEmpty){
+                           
+                        }else{
+                            childArray.append(child3)
+                        }
                         let child4 = Person(name: project["fourth_name"].stringValue, phone: project["fourth_telephone"].stringValue, email: project["fourth_email"].stringValue)
+                        if(child4.name!.isEmpty){
+                            
+                        }else{
+                            childArray.append(child4)
+                        }
                         let child5 = Person(name: project["fifth_name"].stringValue, phone: project["fifth_telephone"].stringValue, email: project["fifth_email"].stringValue)
-                        self.dataSource.append(Parent(childs: [child1,child2,child3,child4,child5], title: project["name"].stringValue))
+                        if(child5.name!.isEmpty){
+                            
+                        }else{
+                            childArray.append(child5)
+                        }
+                        self.dataSource.append(Parent(childs: childArray, title: project["name"].stringValue))
                     }
                     self.total = self.dataSource.count
                 }
