@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -44,43 +43,55 @@
                                             <subviews>
                                                 <button opaque="NO" tag="20" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0OV-xw-UVq">
                                                     <rect key="frame" x="0.0" y="250" width="168" height="40"/>
-                                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="backgroundColor" red="0.23137254900000001" green="0.34901960780000002" blue="0.59607843140000005" alpha="1" colorSpace="calibratedRGB"/>
                                                     <state key="normal" title="Call">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                 </button>
                                                 <button opaque="NO" tag="10" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uJa-qr-yxd">
                                                     <rect key="frame" x="168" y="250" width="168" height="40"/>
-                                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="backgroundColor" red="0.23137254900000001" green="0.34901960780000002" blue="0.59607843140000005" alpha="1" colorSpace="calibratedRGB"/>
                                                     <state key="normal" title="Email">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                 </button>
                                                 <button opaque="NO" tag="30" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jav-hQ-Ekh">
                                                     <rect key="frame" x="336" y="250" width="168" height="40"/>
-                                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="backgroundColor" red="0.23137254900000001" green="0.34901960780000002" blue="0.59607843140000005" alpha="1" colorSpace="calibratedRGB"/>
                                                     <state key="normal" title="Text">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                 </button>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="facebook-default-no-profile-pic (1).jpg" translatesAutoresizingMaskIntoConstraints="NO" id="OYv-Cu-nwE">
+                                                    <rect key="frame" x="26" y="67" width="117" height="106"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="106" id="3Cv-9w-8EA"/>
+                                                        <constraint firstAttribute="width" constant="117" id="C3M-NI-DPI"/>
+                                                        <constraint firstAttribute="width" constant="175" id="OZl-Vp-gUd"/>
+                                                    </constraints>
+                                                    <variation key="default">
+                                                        <mask key="constraints">
+                                                            <exclude reference="OZl-Vp-gUd"/>
+                                                        </mask>
+                                                    </variation>
+                                                </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" tag="100" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ba2-G0-AMC">
-                                                    <rect key="frame" x="296" y="109" width="140" height="21"/>
+                                                    <rect key="frame" x="336" y="109" width="140" height="21"/>
                                                     <accessibility key="accessibilityConfiguration" label="100"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OYv-Cu-nwE">
-                                                    <rect key="frame" x="8" y="35" width="175" height="170"/>
-                                                </imageView>
                                             </subviews>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <constraints>
                                                 <constraint firstItem="OYv-Cu-nwE" firstAttribute="leading" secondItem="uMt-9d-43B" secondAttribute="leading" constant="8" id="1q0-fz-kee"/>
+                                                <constraint firstItem="OYv-Cu-nwE" firstAttribute="leading" secondItem="uMt-9d-43B" secondAttribute="leading" constant="26" id="2D8-wy-Vbn"/>
                                                 <constraint firstItem="0OV-xw-UVq" firstAttribute="leading" secondItem="uMt-9d-43B" secondAttribute="leading" id="3Ce-gy-dAU"/>
                                                 <constraint firstAttribute="bottom" secondItem="0OV-xw-UVq" secondAttribute="bottom" id="3cn-Z8-8PI"/>
                                                 <constraint firstItem="0OV-xw-UVq" firstAttribute="top" secondItem="uMt-9d-43B" secondAttribute="top" constant="250" id="4se-jR-eAH"/>
                                                 <constraint firstAttribute="bottom" secondItem="OYv-Cu-nwE" secondAttribute="bottom" constant="85" id="5uX-ln-dAC"/>
+                                                <constraint firstAttribute="trailing" secondItem="OYv-Cu-nwE" secondAttribute="trailing" constant="361" id="7Ir-Ku-wHB"/>
                                                 <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="OYv-Cu-nwE" secondAttribute="trailing" constant="321" id="7fP-Av-Ftl"/>
                                                 <constraint firstItem="Jav-hQ-Ekh" firstAttribute="leading" secondItem="uJa-qr-yxd" secondAttribute="trailing" id="8Fs-VE-GFP"/>
                                                 <constraint firstAttribute="bottom" secondItem="0OV-xw-UVq" secondAttribute="bottom" id="9Wi-Tg-A2I"/>
@@ -90,24 +101,24 @@
                                                 <constraint firstAttribute="bottom" secondItem="0OV-xw-UVq" secondAttribute="bottom" id="Hap-lH-goe"/>
                                                 <constraint firstItem="0OV-xw-UVq" firstAttribute="leading" secondItem="uMt-9d-43B" secondAttribute="leading" id="Hfs-OR-5Ot"/>
                                                 <constraint firstAttribute="trailing" secondItem="Jav-hQ-Ekh" secondAttribute="trailing" id="JTR-O3-rKt"/>
-                                                <constraint firstItem="ba2-G0-AMC" firstAttribute="leading" relation="lessThanOrEqual" secondItem="uMt-9d-43B" secondAttribute="leading" constant="296" id="PvI-dm-I9D"/>
+                                                <constraint firstItem="ba2-G0-AMC" firstAttribute="leading" secondItem="OYv-Cu-nwE" secondAttribute="trailing" constant="45" id="KpG-AD-4fD"/>
                                                 <constraint firstItem="uJa-qr-yxd" firstAttribute="width" secondItem="Jav-hQ-Ekh" secondAttribute="width" id="Pxv-B5-MBP"/>
                                                 <constraint firstItem="uJa-qr-yxd" firstAttribute="top" secondItem="uMt-9d-43B" secondAttribute="top" constant="250" id="Q8e-fG-THU"/>
                                                 <constraint firstAttribute="bottom" secondItem="ba2-G0-AMC" secondAttribute="bottom" constant="160" id="Qfv-fY-9dS"/>
                                                 <constraint firstItem="0OV-xw-UVq" firstAttribute="width" secondItem="uJa-qr-yxd" secondAttribute="width" id="SdH-j2-Mqs"/>
-                                                <constraint firstItem="OYv-Cu-nwE" firstAttribute="width" secondItem="uMt-9d-43B" secondAttribute="height" multiplier="35:58" id="VDe-FF-J3y"/>
                                                 <constraint firstAttribute="bottom" secondItem="0OV-xw-UVq" secondAttribute="bottom" id="aEt-OA-27k"/>
                                                 <constraint firstItem="uJa-qr-yxd" firstAttribute="top" secondItem="uMt-9d-43B" secondAttribute="top" constant="150" id="ekw-a5-Ozg"/>
                                                 <constraint firstAttribute="trailing" secondItem="Jav-hQ-Ekh" secondAttribute="trailing" id="f1f-We-WBJ"/>
+                                                <constraint firstItem="OYv-Cu-nwE" firstAttribute="top" secondItem="uMt-9d-43B" secondAttribute="top" constant="67" id="fUP-vu-RZc"/>
                                                 <constraint firstItem="ba2-G0-AMC" firstAttribute="top" secondItem="uMt-9d-43B" secondAttribute="top" constant="109" id="fkf-tv-2N3"/>
                                                 <constraint firstItem="uJa-qr-yxd" firstAttribute="height" secondItem="0OV-xw-UVq" secondAttribute="height" id="gB9-ke-zh8"/>
+                                                <constraint firstAttribute="bottom" secondItem="OYv-Cu-nwE" secondAttribute="bottom" constant="117" id="gF0-TW-goL"/>
                                                 <constraint firstItem="ba2-G0-AMC" firstAttribute="leading" secondItem="uMt-9d-43B" secondAttribute="leading" constant="200" id="iGN-Tj-1ue"/>
                                                 <constraint firstItem="uJa-qr-yxd" firstAttribute="leading" secondItem="0OV-xw-UVq" secondAttribute="trailing" id="iib-Xb-uj3"/>
                                                 <constraint firstItem="Jav-hQ-Ekh" firstAttribute="leading" secondItem="uJa-qr-yxd" secondAttribute="trailing" id="jpn-dx-k6y"/>
                                                 <constraint firstAttribute="bottom" secondItem="ba2-G0-AMC" secondAttribute="bottom" constant="105" id="m83-mj-DiP"/>
                                                 <constraint firstItem="uJa-qr-yxd" firstAttribute="leading" secondItem="0OV-xw-UVq" secondAttribute="trailing" id="nCA-xn-4Cv"/>
                                                 <constraint firstItem="OYv-Cu-nwE" firstAttribute="top" secondItem="uMt-9d-43B" secondAttribute="top" constant="35" id="oLx-Z6-g88"/>
-                                                <constraint firstAttribute="trailing" secondItem="ba2-G0-AMC" secondAttribute="trailing" constant="68" id="ols-Pw-cDK"/>
                                                 <constraint firstItem="ba2-G0-AMC" firstAttribute="top" secondItem="uMt-9d-43B" secondAttribute="top" constant="64" id="uoD-RK-oSJ"/>
                                                 <constraint firstItem="Jav-hQ-Ekh" firstAttribute="height" secondItem="uJa-qr-yxd" secondAttribute="height" id="vP4-eB-Wgo"/>
                                                 <constraint firstAttribute="trailing" secondItem="ba2-G0-AMC" secondAttribute="trailing" constant="58" id="wtV-lC-vXy"/>
@@ -115,6 +126,10 @@
                                             </constraints>
                                             <variation key="default">
                                                 <mask key="constraints">
+                                                    <exclude reference="1q0-fz-kee"/>
+                                                    <exclude reference="5uX-ln-dAC"/>
+                                                    <exclude reference="7fP-Av-Ftl"/>
+                                                    <exclude reference="oLx-Z6-g88"/>
                                                     <exclude reference="3Ce-gy-dAU"/>
                                                     <exclude reference="3cn-Z8-8PI"/>
                                                     <exclude reference="9Wi-Tg-A2I"/>
@@ -282,5 +297,6 @@
     </scenes>
     <resources>
         <image name="Logo_Sans_background.png" width="979" height="362"/>
+        <image name="facebook-default-no-profile-pic (1).jpg" width="1200" height="1200"/>
     </resources>
 </document>
