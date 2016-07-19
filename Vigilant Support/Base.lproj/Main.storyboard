@@ -217,28 +217,30 @@
                                     <action selector="LoginButton:" destination="4YF-FI-OU7" eventType="touchUpInside" id="Ern-Sf-B0v"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Logo_Sans_background.png" translatesAutoresizingMaskIntoConstraints="NO" id="bXN-lC-bkL">
-                                <rect key="frame" x="139" y="66" width="323" height="162"/>
-                            </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="H42-Yy-tmZ">
                                 <rect key="frame" x="40" y="285" width="520" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                             </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo_Sans_background.png" translatesAutoresizingMaskIntoConstraints="NO" id="bXN-lC-bkL">
+                                <rect key="frame" x="50" y="66" width="500" height="162"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="H42-Yy-tmZ" secondAttribute="trailing" constant="20" id="0VH-Sn-n0I"/>
                             <constraint firstItem="IBE-M1-bcZ" firstAttribute="top" secondItem="bXN-lC-bkL" secondAttribute="bottom" constant="372" id="2mN-bd-afr"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="bXN-lC-bkL" secondAttribute="trailing" constant="30" id="4sq-s1-RoZ"/>
+                            <constraint firstItem="bXN-lC-bkL" firstAttribute="centerX" secondItem="lRd-qq-53a" secondAttribute="centerX" id="3r2-3l-6hq"/>
                             <constraint firstItem="H42-Yy-tmZ" firstAttribute="leading" secondItem="lRd-qq-53a" secondAttribute="leadingMargin" constant="20" id="5Z8-om-KZP"/>
+                            <constraint firstItem="bXN-lC-bkL" firstAttribute="top" secondItem="Kqo-b6-1bz" secondAttribute="bottom" constant="46" id="7Wg-nc-OvO"/>
                             <constraint firstItem="H42-Yy-tmZ" firstAttribute="centerX" secondItem="lRd-qq-53a" secondAttribute="centerX" id="DCf-pi-Ciq"/>
+                            <constraint firstItem="bXN-lC-bkL" firstAttribute="leading" secondItem="lRd-qq-53a" secondAttribute="leadingMargin" constant="30" id="Mdl-no-cH1"/>
                             <constraint firstItem="AOU-lB-ZiG" firstAttribute="leading" secondItem="lRd-qq-53a" secondAttribute="leadingMargin" constant="20" id="POn-Vr-31j"/>
                             <constraint firstAttribute="trailingMargin" secondItem="AOU-lB-ZiG" secondAttribute="trailing" constant="20" id="Pv6-D8-por"/>
-                            <constraint firstItem="bXN-lC-bkL" firstAttribute="leading" secondItem="lRd-qq-53a" secondAttribute="leadingMargin" constant="30" id="QGS-RM-NcK"/>
                             <constraint firstItem="AOU-lB-ZiG" firstAttribute="centerX" secondItem="lRd-qq-53a" secondAttribute="centerX" id="XUb-YE-mSS"/>
                             <constraint firstItem="IBE-M1-bcZ" firstAttribute="top" secondItem="H42-Yy-tmZ" secondAttribute="bottom" constant="285" id="mVI-1M-HwT"/>
                             <constraint firstItem="IBE-M1-bcZ" firstAttribute="top" secondItem="AOU-lB-ZiG" secondAttribute="bottom" constant="44" id="vBD-hz-T81"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bXN-lC-bkL" secondAttribute="trailing" constant="30" id="zAJ-hw-urR"/>
                         </constraints>
                     </view>
                     <connections>
