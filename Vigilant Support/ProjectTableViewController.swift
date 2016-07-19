@@ -26,6 +26,7 @@ class ProjectTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.separatorColor = UIColor.clearColor();
+        self.tableView.separatorStyle = .None
         self.view.backgroundColor = UIColor(red: 0.9,green: 0.9,blue: 0.9, alpha: 1)
         self.tableView.backgroundColor = UIColor(red: 0.9,green: 0.9,blue: 0.9, alpha: 1)
         self.title = self.projectTitle
@@ -133,7 +134,7 @@ class ProjectTableViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return 300;
+        return 300 ;
     }
 
     
