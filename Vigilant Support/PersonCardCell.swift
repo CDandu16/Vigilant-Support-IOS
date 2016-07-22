@@ -19,9 +19,11 @@ class PersonCardCell : UITableViewCell{
     @IBOutlet weak var sms: UIButton!
     @IBOutlet weak var cardView: UIView!
     @IBOutlet weak var overallCell: UIView!
+    @IBOutlet weak var thumbNail: UIImageView!
     
     override func layoutSubviews() {
         self.cardSetup()
+        self.imageSetup()
     }
     
     func cardSetup(){
@@ -34,6 +36,13 @@ class PersonCardCell : UITableViewCell{
         self.cardView.layer.shadowOpacity = 0.2;
         self.overallCell.backgroundColor = UIColor(red: 0.9,green: 0.9,blue: 0.9, alpha: 1)
     
+    }
+    
+    func imageSetup(){
+//        self.thumbNail.layer.borderWidth = 2.0;
+//        self.thumbNail.layer.borderColor = UIColor.blackColor().CGColor
+        self.thumbNail.layer.cornerRadius = 50;
+        self.thumbNail.clipsToBounds = true;
     }
     
     override func awakeFromNib() {

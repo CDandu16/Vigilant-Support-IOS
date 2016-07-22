@@ -8,6 +8,7 @@ target 'Vigilant Support' do
   # Pods for Vigilant Support
 pod 'Alamofire'
 pod 'SwiftyJSON'
+pod 'EZSwiftExtensions'
 
   target 'Vigilant SupportTests' do
     inherit! :search_paths

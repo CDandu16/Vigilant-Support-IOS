@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "791F4C588F50528838FA518E103DC76A"
+               BlueprintIdentifier = "CD4127A91A0D64E6A9DACD465BDBDBD3"
                BuildableName = "Pods_Vigilant_Support.framework"
                BlueprintName = "Pods-Vigilant Support"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "791F4C588F50528838FA518E103DC76A"
+            BlueprintIdentifier = "CD4127A91A0D64E6A9DACD465BDBDBD3"
             BuildableName = "Pods_Vigilant_Support.framework"
             BlueprintName = "Pods-Vigilant Support"
             ReferencedContainer = "container:Pods.xcodeproj">

@@ -39,7 +39,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uMt-9d-43B">
-                                            <rect key="frame" x="8" y="5" width="584" height="280"/>
+                                            <rect key="frame" x="8" y="8" width="584" height="280"/>
                                             <subviews>
                                                 <button opaque="NO" tag="20" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0OV-xw-UVq" customClass="subclassedUIButton" customModule="Vigilant_Support" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="240" width="194" height="40"/>
@@ -55,11 +55,11 @@
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                 </button>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="facebook-default-no-profile-pic (1).jpg" translatesAutoresizingMaskIntoConstraints="NO" id="OYv-Cu-nwE">
-                                                    <rect key="frame" x="66" y="67" width="117" height="106"/>
+                                                <imageView userInteractionEnabled="NO" tag="60" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="facebook-default-no-profile-pic (1).jpg" translatesAutoresizingMaskIntoConstraints="NO" id="OYv-Cu-nwE">
+                                                    <rect key="frame" x="66" y="67" width="100" height="100"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="106" id="3Cv-9w-8EA"/>
-                                                        <constraint firstAttribute="width" constant="117" id="C3M-NI-DPI"/>
+                                                        <constraint firstAttribute="height" constant="100" id="3Cv-9w-8EA"/>
+                                                        <constraint firstAttribute="width" constant="100" id="C3M-NI-DPI"/>
                                                         <constraint firstAttribute="width" constant="175" id="OZl-Vp-gUd"/>
                                                     </constraints>
                                                     <variation key="default">
@@ -208,6 +208,7 @@
                                     <outlet property="overallCell" destination="Led-Qe-Fla" id="NFS-wb-kdF"/>
                                     <outlet property="picture" destination="OYv-Cu-nwE" id="sF7-YV-ARD"/>
                                     <outlet property="sms" destination="Jav-hQ-Ekh" id="Scg-0X-6cU"/>
+                                    <outlet property="thumbNail" destination="OYv-Cu-nwE" id="fiG-yE-OUx"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

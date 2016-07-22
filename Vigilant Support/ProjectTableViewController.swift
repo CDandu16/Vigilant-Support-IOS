@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import EZSwiftExtensions
 import Alamofire
 import SwiftyJSON
 
@@ -38,29 +39,6 @@ class ProjectTableViewController: UITableViewController {
         super.didReceiveMemoryWarning()
     }
 
-    //HOW DO I DO THIS 
-//    func loadProjects(){
-//        print("hi")
-//        Alamofire.request(.GET,"http://192.168.0.71:3000/api/projects/"+GlobalV.email).responseJSON{
-//            response in if let JSONValues = response.result.value{
-//                let json = JSON(JSONValues)
-//                if let projects = json["Projects"].array{
-//                    for project in projects {
-//                        let child1 = Person(name: project["first_name"].stringValue, phone: project["first_telephone"].stringValue, email: project["first_email"].stringValue)
-//                        let child2 = Person(name: project["secondary_name"].stringValue, phone: project["secondary_telephone"].stringValue, email: project["secondary_email"].stringValue)
-//                        let child3 = Person(name: project["third_name"].stringValue, phone: project["third_telephone"].stringValue, email: project["third_email"].stringValue)
-//                        let child4 = Person(name: project["fourth_name"].stringValue, phone: project["fourth_telephone"].stringValue, email: project["fourth_email"].stringValue)
-//                        let child5 = Person(name: project["fifth_name"].stringValue, phone: project["fifth_telephone"].stringValue, email: project["fifth_email"].stringValue)
-//                        self.dataSource+=[child1,child2,child3,child4,child5]
-//                    }
-//                    self.total = self.dataSource.count
-//                }
-//            }
-//            self.tableView.reloadData()
-//        }
-//    }
-//    
-   
 
     // MARK: UITableViewDataSource
     
@@ -80,7 +58,11 @@ class ProjectTableViewController: UITableViewController {
             let child = self.view.viewWithTag(100) as? UILabel
             child!.text =  self.dataSource[indexPath.row].name
             child!.textAlignment = .Center
-            
+        
+            let thumb = self.view.viewWithTag(60) as? UIImageView
+            thumb?.imageWithUrl(url: self.dataSource[indexPath.row].picture!)
+        
+        
             let emlBtn = self.view.viewWithTag(10) as? subclassedUIButton
             let callBtn = self.view.viewWithTag(20) as? subclassedUIButton
             let txtBtn = self.view.viewWithTag(30) as? subclassedUIButton
@@ -132,6 +114,17 @@ class ProjectTableViewController: UITableViewController {
         let url = NSURL(string: "sms://\(sms)")!
         UIApplication.sharedApplication().openURL(url)
     }
+    
+//    func load_image(urlString: String){
+//        var imgUrl: NSURL = NSURL(string: urlString)!
+//        let request: NSURLRequest = NSURLRequest(URL: imgUrl)
+//        NSURLConnection.sendAsynchronousRequest(request, queue: NSOperationQueue.mainQueue(), completionHandler: {(response: NSURLResponse?,data: NSData?, error: NSError?) ->Void in
+//            if error == nil {
+//               
+//                thumb = UIImageView(image: UIImage(data: data!))
+//            }
+//        })
+//    }
     
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         return 300 ;

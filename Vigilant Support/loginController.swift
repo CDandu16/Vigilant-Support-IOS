@@ -18,25 +18,28 @@ class loginController: UIViewController,UITextFieldDelegate {
         let validLogin = isValidEmail(emailInput.text!)
         if validLogin {
             print("User entered valid input")
+            print(self.emailInput.text!)
+            GlobalV.email = 1;
+            self.performSegueWithIdentifier("attempt", sender: self)
         } else {
             print("Invalid email address")
         }
-        Alamofire.request(.GET,"http://192.168.0.71:3000/api/users/"+emailInput.text!).responseJSON{
-            response in if let JSONValues = response.result.value{
-                let json = JSON(JSONValues)
-                let user = json["Users"].stringValue
-                print(user)
-                if(user == "client"){
-                    print(self.emailInput.text!)
-                    GlobalV.email = self.emailInput.text!
-                    self.performSegueWithIdentifier("attempt", sender: self)
-                }else if(user == "employee"){
-                
-                }else{
-                    
-                }
-            }
-        }
+//        Alamofire.request(.GET,"http://192.168.0.71:3000/api/users/"+emailInput.text!).responseJSON{
+//            response in if let JSONValues = response.result.value{
+//                let json = JSON(JSONValues)
+//                let user = json["Users"].stringValue
+//                print(user)
+//                if("client" == "client"){
+//                    print(self.emailInput.text!)
+//                    GlobalV.email = self.emailInput.text!
+//                    self.performSegueWithIdentifier("attempt", sender: self)
+//                }else if(user == "employee"){
+//                
+//                }else{
+//                    
+//                }
+//            }
+//        }
     }
     
     

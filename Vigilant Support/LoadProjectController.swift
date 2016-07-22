@@ -39,35 +39,21 @@ class LoadProjectController: UITableViewController {
     
     //HOW DO I DO THIS
     func loadProjects(){
-        Alamofire.request(.GET,"http://192.168.0.71:3000/api/projects/"+GlobalV.email).responseJSON{
+        Alamofire.request(.GET,"http://192.168.0.71:3000/api/projects/project/1").responseJSON{
             response in if let JSONValues = response.result.value{
                 let json = JSON(JSONValues)
-                if let projects = json["Projects"].array{
+                if let projects = json["Projects"]["projects"].array{
                     for project in projects {
                         var childArray = [Person]();
-                        let child1 = Person(name: project["first_name"].stringValue, phone: project["first_telephone"].stringValue, email: project["first_email"].stringValue)
-                        childArray.append(child1);
-                        let child2 = Person(name: project["secondary_name"].stringValue, phone: project["secondary_telephone"].stringValue, email: project["secondary_email"].stringValue)
-                        childArray.append(child2);
-                        let child3 = Person(name: project["third_name"].stringValue, phone: project["third_telephone"].stringValue, email: project["third_email"].stringValue)
-                        if(child3.name!.isEmpty){
-                           
-                        }else{
-                            childArray.append(child3)
+                        if let employees = project["Employees"].array{
+                            for employee in employees{
+                                print("hello")
+                                print(employee["picture"].stringValue)
+                                let child = Person(name: employee["name"].stringValue, phone: employee["phone"].stringValue, email: employee["email"].stringValue, picture: employee["picture"].stringValue);
+                                childArray.append(child);
+                            }
                         }
-                        let child4 = Person(name: project["fourth_name"].stringValue, phone: project["fourth_telephone"].stringValue, email: project["fourth_email"].stringValue)
-                        if(child4.name!.isEmpty){
-                            
-                        }else{
-                            childArray.append(child4)
-                        }
-                        let child5 = Person(name: project["fifth_name"].stringValue, phone: project["fifth_telephone"].stringValue, email: project["fifth_email"].stringValue)
-                        if(child5.name!.isEmpty){
-                            
-                        }else{
-                            childArray.append(child5)
-                        }
-                        self.dataSource.append(Parent(childs: childArray, title: project["name"].stringValue))
+                        self.dataSource.append(Parent(childs: childArray, title: project["project_name"].stringValue))
                     }
                     self.total = self.dataSource.count
                 }

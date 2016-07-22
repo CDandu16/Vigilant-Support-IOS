@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>EZSwiftExtensions.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Vigilant Support.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -32,22 +37,27 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>50FCAE8654884D57F9BD12052FD984E3</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>791F4C588F50528838FA518E103DC76A</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>79C040AFDDCE1BCBF6D8B5EB0B85887F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>9761EF65FDDB9233F1D714C05F3F75D1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BF529704E2D57A46A0B88D09BCBD9804</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>C63D78BE3B021FE21FB58DEC24A1321B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CD4127A91A0D64E6A9DACD465BDBDBD3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
