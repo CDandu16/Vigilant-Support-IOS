@@ -13,39 +13,37 @@ import SwiftyJSON
 class loginController: UIViewController,UITextFieldDelegate {
     
     @IBOutlet weak var emailInput: UITextField!
+    @IBOutlet weak var passwordInput: UITextField!
+
 
     @IBAction func LoginButton(sender: AnyObject) {
         let validLogin = isValidEmail(emailInput.text!)
         if validLogin {
-            print("User entered valid input")
-            print(self.emailInput.text!)
-            GlobalV.email = 1;
-            self.performSegueWithIdentifier("attempt", sender: self)
-        } else {
-            print("Invalid email address")
+            
+            Alamofire.request(.POST,"http://192.168.0.71:3000/api/authenticate",parameters: [ "email":  self.emailInput.text!, "password": self.passwordInput.text!]).responseJSON{
+                response in if let JSONValues = response.result.value{
+                    let json = JSON(JSONValues)
+                    print(json);
+                    let token = json["token"].stringValue
+                    let id = json["user_id"].stringValue;
+                    GlobalV.email = id;
+                    GlobalV.token = token;
+                    if json["first_time"].boolValue{
+                        self.performSegueWithIdentifier("new_password", sender: self)
+                    }else{
+                        self.performSegueWithIdentifier("attempt", sender: self)
+                    }
+                   
+                }
+            }
         }
-//        Alamofire.request(.GET,"http://192.168.0.71:3000/api/users/"+emailInput.text!).responseJSON{
-//            response in if let JSONValues = response.result.value{
-//                let json = JSON(JSONValues)
-//                let user = json["Users"].stringValue
-//                print(user)
-//                if("client" == "client"){
-//                    print(self.emailInput.text!)
-//                    GlobalV.email = self.emailInput.text!
-//                    self.performSegueWithIdentifier("attempt", sender: self)
-//                }else if(user == "employee"){
-//                
-//                }else{
-//                    
-//                }
-//            }
-//        }
     }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.emailInput.delegate = self;
+        self.passwordInput.delegate = self;
         UIApplication.sharedApplication().statusBarStyle = .Default
         // Do any additional setup after loading the view, typically from a nib.
     }

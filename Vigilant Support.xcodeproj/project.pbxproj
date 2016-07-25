@@ -16,6 +16,7 @@
 		024252E01D13162400C0DE09 /* Vigilant_SupportUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024252DF1D13162400C0DE09 /* Vigilant_SupportUITests.swift */; };
 		024252EE1D13171C00C0DE09 /* loginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024252ED1D13171C00C0DE09 /* loginController.swift */; };
 		02836B8B1D351ECC00B2518E /* Logo_Sans_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 02836B8A1D351ECC00B2518E /* Logo_Sans_background.png */; };
+		0285B2581D46A0BF003BD10A /* updatePasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0285B2571D46A0BF003BD10A /* updatePasswordController.swift */; };
 		02993A2A1D198288001C3615 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02993A291D198288001C3615 /* Project.swift */; };
 		02993A301D198747001C3615 /* projectModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02993A2F1D198747001C3615 /* projectModel.swift */; };
 		02993A361D19A1DF001C3615 /* GlobalV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02993A351D19A1DF001C3615 /* GlobalV.swift */; };
@@ -64,6 +65,7 @@
 		024252E11D13162400C0DE09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		024252ED1D13171C00C0DE09 /* loginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginController.swift; sourceTree = "<group>"; };
 		02836B8A1D351ECC00B2518E /* Logo_Sans_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Logo_Sans_background.png; path = ../../../../Downloads/Logo_Sans_background.png; sourceTree = "<group>"; };
+		0285B2571D46A0BF003BD10A /* updatePasswordController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = updatePasswordController.swift; sourceTree = "<group>"; };
 		02993A291D198288001C3615 /* Project.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
 		02993A2F1D198747001C3615 /* projectModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = projectModel.swift; sourceTree = "<group>"; };
 		02993A351D19A1DF001C3615 /* GlobalV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalV.swift; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 				02993A351D19A1DF001C3615 /* GlobalV.swift */,
 				02C21A2E1D3A94F300F453B2 /* PersonCardCell.swift */,
 				02EEAC901D3D15CD00E57B3A /* FirstViewController.swift */,
+				0285B2571D46A0BF003BD10A /* updatePasswordController.swift */,
 			);
 			path = "Vigilant Support";
 			sourceTree = "<group>";
@@ -466,6 +469,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				024252EE1D13171C00C0DE09 /* loginController.swift in Sources */,
+				0285B2581D46A0BF003BD10A /* updatePasswordController.swift in Sources */,
 				024252BE1D13162400C0DE09 /* AppDelegate.swift in Sources */,
 				02993A3C1D19B2B9001C3615 /* Person.swift in Sources */,
 				02EEAC911D3D15CD00E57B3A /* FirstViewController.swift in Sources */,

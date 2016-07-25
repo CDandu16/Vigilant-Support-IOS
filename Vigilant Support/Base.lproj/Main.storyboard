@@ -20,7 +20,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pdf-Db-rag" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="779" y="-1097"/>
+            <point key="canvasLocation" x="414" y="-310"/>
         </scene>
         <!--Project Table View Controller-->
         <scene sceneID="ycJ-uM-Ayn">
@@ -216,7 +216,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wkg-c2-tYh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1586" y="-310"/>
+            <point key="canvasLocation" x="1980" y="-310"/>
         </scene>
         <!--Login Controller-->
         <scene sceneID="zxU-9f-bic">
@@ -252,6 +252,11 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo_Sans_background.png" translatesAutoresizingMaskIntoConstraints="NO" id="bXN-lC-bkL">
                                 <rect key="frame" x="50" y="66" width="500" height="162"/>
                             </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hSn-AW-A7X">
+                                <rect key="frame" x="40" y="336" width="520" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" spellCheckingType="no" keyboardType="emailAddress" secureTextEntry="YES"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -260,24 +265,81 @@
                             <constraint firstItem="bXN-lC-bkL" firstAttribute="centerX" secondItem="lRd-qq-53a" secondAttribute="centerX" id="3r2-3l-6hq"/>
                             <constraint firstItem="H42-Yy-tmZ" firstAttribute="leading" secondItem="lRd-qq-53a" secondAttribute="leadingMargin" constant="20" id="5Z8-om-KZP"/>
                             <constraint firstItem="bXN-lC-bkL" firstAttribute="top" secondItem="Kqo-b6-1bz" secondAttribute="bottom" constant="46" id="7Wg-nc-OvO"/>
+                            <constraint firstItem="hSn-AW-A7X" firstAttribute="centerX" secondItem="lRd-qq-53a" secondAttribute="centerX" id="B8d-vY-pqn"/>
                             <constraint firstItem="H42-Yy-tmZ" firstAttribute="centerX" secondItem="lRd-qq-53a" secondAttribute="centerX" id="DCf-pi-Ciq"/>
                             <constraint firstItem="bXN-lC-bkL" firstAttribute="leading" secondItem="lRd-qq-53a" secondAttribute="leadingMargin" constant="30" id="Mdl-no-cH1"/>
                             <constraint firstItem="AOU-lB-ZiG" firstAttribute="leading" secondItem="lRd-qq-53a" secondAttribute="leadingMargin" constant="20" id="POn-Vr-31j"/>
                             <constraint firstAttribute="trailingMargin" secondItem="AOU-lB-ZiG" secondAttribute="trailing" constant="20" id="Pv6-D8-por"/>
+                            <constraint firstItem="hSn-AW-A7X" firstAttribute="leading" secondItem="lRd-qq-53a" secondAttribute="leadingMargin" constant="20" id="THg-3H-eIi"/>
                             <constraint firstItem="AOU-lB-ZiG" firstAttribute="centerX" secondItem="lRd-qq-53a" secondAttribute="centerX" id="XUb-YE-mSS"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hSn-AW-A7X" secondAttribute="trailing" constant="20" id="bI1-0u-gkP"/>
                             <constraint firstItem="IBE-M1-bcZ" firstAttribute="top" secondItem="H42-Yy-tmZ" secondAttribute="bottom" constant="285" id="mVI-1M-HwT"/>
+                            <constraint firstItem="IBE-M1-bcZ" firstAttribute="top" secondItem="hSn-AW-A7X" secondAttribute="bottom" constant="234" id="ms5-s0-3iV"/>
                             <constraint firstItem="IBE-M1-bcZ" firstAttribute="top" secondItem="AOU-lB-ZiG" secondAttribute="bottom" constant="44" id="vBD-hz-T81"/>
                             <constraint firstAttribute="trailingMargin" secondItem="bXN-lC-bkL" secondAttribute="trailing" constant="30" id="zAJ-hw-urR"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="emailInput" destination="H42-Yy-tmZ" id="WaG-ur-j4G"/>
+                        <outlet property="passwordInput" destination="hSn-AW-A7X" id="WtL-6c-GNr"/>
                         <segue destination="acj-Vt-4Cj" kind="show" identifier="attempt" id="nZG-dn-Fia"/>
+                        <segue destination="xRW-WS-gre" kind="presentation" identifier="new_password" id="qrH-1S-QAm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dC2-yy-hfM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="44" y="-310"/>
+            <point key="canvasLocation" x="-1026" y="-310"/>
+        </scene>
+        <!--Update Password Controller-->
+        <scene sceneID="EBt-wF-mGG">
+            <objects>
+                <viewController id="xRW-WS-gre" customClass="updatePasswordController" customModule="Vigilant_Support" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lMS-ff-Lge"/>
+                        <viewControllerLayoutGuide type="bottom" id="ed5-RO-0uG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="96d-Mv-vco">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter New Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oqe-ZW-YWl">
+                                <rect key="frame" x="40" y="285" width="520" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" spellCheckingType="no" keyboardType="emailAddress" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XBB-Vh-uHU">
+                                <rect key="frame" x="62" y="512" width="476" height="38"/>
+                                <color key="backgroundColor" red="0.0" green="0.36470588240000001" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="LoginButton:" destination="4YF-FI-OU7" eventType="touchUpInside" id="Zsv-ty-8JV"/>
+                                    <action selector="changePassword:" destination="xRW-WS-gre" eventType="touchUpInside" id="yST-ak-3f3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="oqe-ZW-YWl" firstAttribute="leading" secondItem="96d-Mv-vco" secondAttribute="leadingMargin" constant="20" id="4JV-Ch-bXP"/>
+                            <constraint firstItem="XBB-Vh-uHU" firstAttribute="leading" secondItem="96d-Mv-vco" secondAttribute="leadingMargin" constant="42" id="FjF-gp-tg6"/>
+                            <constraint firstItem="ed5-RO-0uG" firstAttribute="top" secondItem="XBB-Vh-uHU" secondAttribute="bottom" constant="50" id="KaB-xC-4Fp"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="oqe-ZW-YWl" secondAttribute="trailing" constant="20" id="LAW-Mt-8NE"/>
+                            <constraint firstItem="oqe-ZW-YWl" firstAttribute="centerX" secondItem="96d-Mv-vco" secondAttribute="centerX" id="LNy-SP-SKu"/>
+                            <constraint firstItem="ed5-RO-0uG" firstAttribute="top" secondItem="oqe-ZW-YWl" secondAttribute="bottom" constant="285" id="Yck-up-LIr"/>
+                            <constraint firstItem="XBB-Vh-uHU" firstAttribute="centerX" secondItem="96d-Mv-vco" secondAttribute="centerX" id="k4r-hP-TFz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="XBB-Vh-uHU" secondAttribute="trailing" constant="42" id="qkA-Ea-vtv"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="newPassword" destination="oqe-ZW-YWl" id="0eU-op-KyC"/>
+                        <segue destination="acj-Vt-4Cj" kind="presentation" identifier="updated" id="rFH-ca-MTh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VUY-f1-DD9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-304" y="132"/>
         </scene>
         <!--Load Project Controller-->
         <scene sceneID="JRa-eB-icn">
@@ -321,11 +383,14 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PgO-g3-wHQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="779" y="-310"/>
+            <point key="canvasLocation" x="1117" y="-310"/>
         </scene>
     </scenes>
     <resources>
         <image name="Logo_Sans_background.png" width="979" height="362"/>
         <image name="facebook-default-no-profile-pic (1).jpg" width="1200" height="1200"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="rFH-ca-MTh"/>
+    </inferredMetricsTieBreakers>
 </document>

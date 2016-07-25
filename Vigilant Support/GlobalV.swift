@@ -11,7 +11,8 @@ import Alamofire
 import SwiftyJSON
 
 struct GlobalV {
-    static var email:Int?;
+    static var email:String?;
+    static var token:String?;
 }
 //func loadProjects(){
 //    print("hi")
