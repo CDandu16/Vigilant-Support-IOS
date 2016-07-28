@@ -23,7 +23,7 @@ class ProjectTableViewController: UITableViewController {
     
     //The people
     var person: [Person]!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.separatorColor = UIColor.clearColor();
@@ -33,6 +33,17 @@ class ProjectTableViewController: UITableViewController {
         self.title = self.projectTitle
         print(total)
 //        self.loadProjects()
+    }
+    
+    override func viewDidLayoutSubviews() {
+        let cardView = self.view.viewWithTag(2)
+        cardView!.alpha = CGFloat(1)
+        cardView!.layer.masksToBounds = false;
+        cardView!.layer.shadowOffset = CGSizeMake(0,0)
+        cardView!.layer.cornerRadius = 2;
+        cardView!.layer.shadowRadius = 2;
+        cardView!.layer.shadowPath = UIBezierPath(rect: CGRect(x: CGFloat(0),y: CGFloat(0),width: cardView!.bounds.width,height: cardView!.bounds.height)).CGPath
+        cardView!.layer.shadowOpacity = 0.5;
     }
     
     override func didReceiveMemoryWarning() {
@@ -66,9 +77,13 @@ class ProjectTableViewController: UITableViewController {
             let emlBtn = self.view.viewWithTag(10) as? subclassedUIButton
             let callBtn = self.view.viewWithTag(20) as? subclassedUIButton
             let txtBtn = self.view.viewWithTag(30) as? subclassedUIButton
+        
             emlBtn?.string = self.dataSource[indexPath.row].email
+            //emlBtn?.layer.cornerRadius = 2
             callBtn?.string = self.dataSource[indexPath.row].phone
+            //emlBtn?.layer.cornerRadius = 2
             txtBtn?.string = self.dataSource[indexPath.row].phone
+            //emlBtn?.layer.cornerRadius = 2
             emlBtn?.addTarget(self, action: #selector(ProjectTableViewController.emlBtn(_:)), forControlEvents: .TouchUpInside)
             callBtn?.addTarget(self, action: #selector(ProjectTableViewController.callBtn(_:)), forControlEvents: .TouchUpInside)
             txtBtn?.addTarget(self, action: #selector(ProjectTableViewController.txtBtn(_:)), forControlEvents: .TouchUpInside)
@@ -127,7 +142,7 @@ class ProjectTableViewController: UITableViewController {
 //    }
     
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return 300 ;
+        return 260 ;
     }
 
     

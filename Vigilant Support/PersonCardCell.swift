@@ -17,7 +17,6 @@ class PersonCardCell : UITableViewCell{
     @IBOutlet weak var Call: UIButton!
     @IBOutlet weak var picture: UIImageView!
     @IBOutlet weak var sms: UIButton!
-    @IBOutlet weak var cardView: UIView!
     @IBOutlet weak var overallCell: UIView!
     @IBOutlet weak var thumbNail: UIImageView!
     
@@ -27,13 +26,6 @@ class PersonCardCell : UITableViewCell{
     }
     
     func cardSetup(){
-        self.cardView.alpha = CGFloat(1)
-        self.cardView.layer.masksToBounds = false;
-        self.cardView.layer.cornerRadius = 1;
-        self.cardView.layer.shadowOffset = CGSizeMake(-0.2, 0.2)
-        self.cardView.layer.shadowRadius = 1;
-        self.cardView.layer.shadowPath = UIBezierPath(rect:self.cardView.bounds).CGPath
-        self.cardView.layer.shadowOpacity = 0.2;
         self.overallCell.backgroundColor = UIColor(red: 0.9,green: 0.9,blue: 0.9, alpha: 1)
     
     }

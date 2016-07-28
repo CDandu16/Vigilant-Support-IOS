@@ -280,6 +280,7 @@
 				TargetAttributes = {
 					024252B91D13162400C0DE09 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = P29YMHY7UZ;
 					};
 					024252CF1D13162400C0DE09 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -625,10 +626,13 @@
 			baseConfigurationReference = 62FE4B63EBC74BB7D2F691C8 /* Pods-Vigilant Support.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Vigilant Support/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vigt.Vigilant-Support";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -637,10 +641,13 @@
 			baseConfigurationReference = 3FFF1EA13CA4F6718806FADB /* Pods-Vigilant Support.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Vigilant Support/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vigt.Vigilant-Support";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

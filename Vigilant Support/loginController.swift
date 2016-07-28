@@ -14,26 +14,39 @@ class loginController: UIViewController,UITextFieldDelegate {
     
     @IBOutlet weak var emailInput: UITextField!
     @IBOutlet weak var passwordInput: UITextField!
-
-
+    @IBOutlet weak var error: UILabel!
+    
+    
     @IBAction func LoginButton(sender: AnyObject) {
         let validLogin = isValidEmail(emailInput.text!)
         if validLogin {
-            
             Alamofire.request(.POST,"http://192.168.0.71:3000/api/authenticate",parameters: [ "email":  self.emailInput.text!, "password": self.passwordInput.text!]).responseJSON{
-                response in if let JSONValues = response.result.value{
-                    let json = JSON(JSONValues)
-                    print(json);
-                    let token = json["token"].stringValue
-                    let id = json["user_id"].stringValue;
-                    GlobalV.email = id;
-                    GlobalV.token = token;
-                    if json["first_time"].boolValue{
-                        self.performSegueWithIdentifier("new_password", sender: self)
-                    }else{
-                        self.performSegueWithIdentifier("attempt", sender: self)
+                response in
+                switch response.result{
+                case .Failure(_):
+                    if let statusCode = response.response?.statusCode{
+                        if statusCode == 401{
+                            self.error.text = "wrong username or password"
+                            self.error.textColor = UIColor.redColor()
+                            print(self.error.text)
+                        }
                     }
-                   
+                case .Success( _):
+                    if let JSONValues = response.result.value{
+                        let json = JSON(JSONValues)
+                        print(json);
+                        let token = json["token"].stringValue
+                        let id = json["user_id"].stringValue;
+                        GlobalV.email = id;
+                        GlobalV.token = token;
+                        if json["first_time"].boolValue{
+                            self.performSegueWithIdentifier("new_password", sender: self)
+                        }else{
+                            self.performSegueWithIdentifier("attempt", sender: self)
+                        }
+                    }
+                
+                
                 }
             }
         }
