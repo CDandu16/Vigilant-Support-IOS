@@ -24,6 +24,8 @@ class ProjectTableViewController: UITableViewController {
     //The people
     var person: [Person]!
     
+    var viewLaidOut: Bool!;
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.separatorColor = UIColor.clearColor();
@@ -31,19 +33,22 @@ class ProjectTableViewController: UITableViewController {
         self.view.backgroundColor = UIColor(red: 0.9,green: 0.9,blue: 0.9, alpha: 1)
         self.tableView.backgroundColor = UIColor(red: 0.9,green: 0.9,blue: 0.9, alpha: 1)
         self.title = self.projectTitle
+        self.viewLaidOut = false;
         print(total)
 //        self.loadProjects()
     }
     
     override func viewDidLayoutSubviews() {
-        let cardView = self.view.viewWithTag(2)
-        cardView!.alpha = CGFloat(1)
-        cardView!.layer.masksToBounds = false;
-        cardView!.layer.shadowOffset = CGSizeMake(0,0)
-        cardView!.layer.cornerRadius = 2;
-        cardView!.layer.shadowRadius = 2;
-        cardView!.layer.shadowPath = UIBezierPath(rect: CGRect(x: CGFloat(0),y: CGFloat(0),width: cardView!.bounds.width,height: cardView!.bounds.height)).CGPath
-        cardView!.layer.shadowOpacity = 0.5;
+        if(self.view?.viewWithTag(2) != nil){
+            let cardView = self.view.viewWithTag(2)
+            cardView!.alpha = CGFloat(1)
+            cardView!.layer.masksToBounds = false;
+            cardView!.layer.shadowOffset = CGSizeMake(0,0)
+            cardView!.layer.cornerRadius = 2;
+            cardView!.layer.shadowRadius = 2;
+            cardView!.layer.shadowPath = UIBezierPath(rect: CGRect(x: CGFloat(0),y: CGFloat(0),width: cardView!.bounds.width,height: cardView!.bounds.height)).CGPath
+            cardView!.layer.shadowOpacity = 0.5;
+        }
     }
     
     override func didReceiveMemoryWarning() {
