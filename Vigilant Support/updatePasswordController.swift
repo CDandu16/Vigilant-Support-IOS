@@ -14,24 +14,34 @@ class updatePasswordController: UIViewController,UITextFieldDelegate {
     
     
     @IBOutlet weak var newPassword: UITextField!
+    @IBOutlet weak var newPasswordCheck: UITextField!
+    @IBOutlet weak var error: UILabel!
     
     @IBAction func changePassword(sender: AnyObject) {
-        Alamofire.request(.POST,"http://192.168.0.71:3000/api/authenticate/password",headers: ["x-access-token": GlobalV.token!],parameters: [ "id": GlobalV.email!, "password": self.newPassword.text!]).responseJSON{
-            response in if let JSONValues = response.result.value{
-                let json = JSON(JSONValues)
-                print(json);
-                let token = json["token"].stringValue
-                //                let id = json["user_id"].stringValue;
-                //                GlobalV.email = id;
-                GlobalV.token = token;
-                self.performSegueWithIdentifier("updated", sender: self)
+        
+        if(newPassword.text! == newPasswordCheck.text!){
+            Alamofire.request(.POST,"http://192.168.0.71:3000/api/authenticate/password",headers: ["x-access-token": GlobalV.token!],parameters: [ "id": GlobalV.email!, "password": self.newPassword.text!]).responseJSON{
+                response in if let JSONValues = response.result.value{
+                    let json = JSON(JSONValues)
+                    print(json);
+                    let token = json["token"].stringValue
+                    //                let id = json["user_id"].stringValue;
+                    //                GlobalV.email = id;
+                    GlobalV.token = token;
+                    self.performSegueWithIdentifier("updated", sender: self)
+                }
             }
+        }else{
+            self.error.text = "passwords do not match"
+            self.error.textColor = UIColor.redColor()
         }
+
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.newPassword.delegate = self;
+        self.newPasswordCheck.delegate = self;
         UIApplication.sharedApplication().statusBarStyle = .Default
         // Do any additional setup after loading the view, typically from a nib.
     }
