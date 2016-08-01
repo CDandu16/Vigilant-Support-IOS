@@ -72,7 +72,10 @@ class ProjectTableViewController: UITableViewController {
             let cell = tableView.dequeueReusableCellWithIdentifier("cardViewCell", forIndexPath: indexPath) as! PersonCardCell
             
             let child = self.view.viewWithTag(100) as? UILabel
+            let job_title = self.view.viewWithTag(110) as? UILabel
             child!.text =  self.dataSource[indexPath.row].name
+            job_title!.text = self.dataSource[indexPath.row].job_title
+            job_title!.textAlignment = .Center
             child!.textAlignment = .Center
         
             let thumb = self.view.viewWithTag(60) as? UIImageView

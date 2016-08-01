@@ -42,35 +42,28 @@
                                             <rect key="frame" x="8" y="8" width="584" height="240"/>
                                             <subviews>
                                                 <button opaque="NO" tag="20" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0OV-xw-UVq" customClass="subclassedUIButton" customModule="Vigilant_Support" customModuleProvider="target">
-                                                    <rect key="frame" x="0.0" y="190" width="194" height="50"/>
+                                                    <rect key="frame" x="0.0" y="200" width="194" height="40"/>
                                                     <color key="backgroundColor" red="0.23137254900000001" green="0.34901960780000002" blue="0.59607843140000005" alpha="1" colorSpace="calibratedRGB"/>
                                                     <state key="normal" title="Call">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                 </button>
                                                 <button opaque="NO" tag="10" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uJa-qr-yxd" customClass="subclassedUIButton" customModule="Vigilant_Support" customModuleProvider="target">
-                                                    <rect key="frame" x="194" y="190" width="196" height="50"/>
+                                                    <rect key="frame" x="194" y="200" width="196" height="40"/>
                                                     <color key="backgroundColor" red="0.23137254900000001" green="0.34901960780000002" blue="0.59607843140000005" alpha="1" colorSpace="calibratedRGB"/>
                                                     <state key="normal" title="Email">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                 </button>
-                                                <button opaque="NO" tag="30" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jav-hQ-Ekh" customClass="subclassedUIButton" customModule="Vigilant_Support" customModuleProvider="target">
-                                                    <rect key="frame" x="390" y="190" width="194" height="50"/>
-                                                    <color key="backgroundColor" red="0.23137254900000001" green="0.34901960780000002" blue="0.59607843140000005" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <state key="normal" title="Text">
-                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    </state>
-                                                </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" tag="100" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ba2-G0-AMC">
-                                                    <rect key="frame" x="339" y="132" width="45" height="21"/>
+                                                    <rect key="frame" x="270" y="128" width="45" height="21"/>
                                                     <accessibility key="accessibilityConfiguration" label="100"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" tag="60" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="facebook-default-no-profile-pic (1).jpg" translatesAutoresizingMaskIntoConstraints="NO" id="OYv-Cu-nwE">
-                                                    <rect key="frame" x="242" y="8" width="100" height="100"/>
+                                                    <rect key="frame" x="242" y="20" width="100" height="100"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="100" id="3Cv-9w-8EA"/>
                                                         <constraint firstAttribute="width" constant="100" id="C3M-NI-DPI"/>
@@ -82,19 +75,35 @@
                                                         </mask>
                                                     </variation>
                                                 </imageView>
+                                                <button opaque="NO" tag="30" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jav-hQ-Ekh" customClass="subclassedUIButton" customModule="Vigilant_Support" customModuleProvider="target">
+                                                    <rect key="frame" x="390" y="200" width="194" height="40"/>
+                                                    <color key="backgroundColor" red="0.23137254900000001" green="0.34901960780000002" blue="0.59607843140000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <state key="normal" title="Text">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="110" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Job Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kz0-7c-dgH">
+                                                    <rect key="frame" x="270" y="145" width="45" height="21"/>
+                                                    <accessibility key="accessibilityConfiguration" label="100"/>
+                                                    <fontDescription key="fontDescription" type="italicSystem" pointSize="10"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <constraints>
                                                 <constraint firstItem="uJa-qr-yxd" firstAttribute="leading" secondItem="0OV-xw-UVq" secondAttribute="trailing" id="0Kz-2k-VPQ"/>
                                                 <constraint firstItem="0OV-xw-UVq" firstAttribute="width" secondItem="uJa-qr-yxd" secondAttribute="width" id="8bH-HM-wRr"/>
-                                                <constraint firstItem="0OV-xw-UVq" firstAttribute="top" secondItem="uMt-9d-43B" secondAttribute="top" constant="190" id="DGw-Qa-wYS"/>
+                                                <constraint firstItem="0OV-xw-UVq" firstAttribute="top" secondItem="uMt-9d-43B" secondAttribute="top" constant="200" id="DGw-Qa-wYS"/>
                                                 <constraint firstItem="OYv-Cu-nwE" firstAttribute="centerX" secondItem="uMt-9d-43B" secondAttribute="centerX" id="FcD-ff-tLf"/>
-                                                <constraint firstAttribute="bottom" secondItem="OYv-Cu-nwE" secondAttribute="bottom" constant="132" id="FkW-gt-AYh"/>
+                                                <constraint firstAttribute="bottom" secondItem="OYv-Cu-nwE" secondAttribute="bottom" constant="120" id="FkW-gt-AYh"/>
                                                 <constraint firstItem="Jav-hQ-Ekh" firstAttribute="leading" secondItem="uJa-qr-yxd" secondAttribute="trailing" id="H3c-wh-eFm"/>
-                                                <constraint firstItem="uJa-qr-yxd" firstAttribute="top" secondItem="uMt-9d-43B" secondAttribute="top" constant="190" id="koZ-j2-awf"/>
-                                                <constraint firstItem="Jav-hQ-Ekh" firstAttribute="top" secondItem="uMt-9d-43B" secondAttribute="top" constant="190" id="lUu-Iy-LRl"/>
-                                                <constraint firstAttribute="bottom" secondItem="ba2-G0-AMC" secondAttribute="bottom" constant="87" id="o1E-sk-lHz"/>
+                                                <constraint firstAttribute="bottom" secondItem="Kz0-7c-dgH" secondAttribute="bottom" constant="74" id="XoE-B8-IgF"/>
+                                                <constraint firstItem="uJa-qr-yxd" firstAttribute="top" secondItem="uMt-9d-43B" secondAttribute="top" constant="200" id="koZ-j2-awf"/>
+                                                <constraint firstItem="Jav-hQ-Ekh" firstAttribute="top" secondItem="uMt-9d-43B" secondAttribute="top" constant="200" id="lUu-Iy-LRl"/>
+                                                <constraint firstAttribute="bottom" secondItem="ba2-G0-AMC" secondAttribute="bottom" constant="91" id="o1E-sk-lHz"/>
                                                 <constraint firstItem="ba2-G0-AMC" firstAttribute="centerX" secondItem="uMt-9d-43B" secondAttribute="centerX" id="qHJ-bG-BPJ"/>
+                                                <constraint firstItem="Kz0-7c-dgH" firstAttribute="centerX" secondItem="uMt-9d-43B" secondAttribute="centerX" id="vMi-n2-wcz"/>
                                                 <constraint firstItem="uJa-qr-yxd" firstAttribute="width" secondItem="Jav-hQ-Ekh" secondAttribute="width" id="zi3-vx-inv"/>
                                             </constraints>
                                         </view>

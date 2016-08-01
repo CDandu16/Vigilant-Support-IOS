@@ -47,9 +47,7 @@ class LoadProjectController: UITableViewController {
                         var childArray = [Person]();
                         if let employees = project["Employees"].array{
                             for employee in employees{
-                                print("hello")
-                                print(employee["picture"].stringValue)
-                                let child = Person(name: employee["name"].stringValue, phone: employee["phone"].stringValue, email: employee["email"].stringValue, picture: employee["picture"].stringValue);
+                                let child = Person(name: employee["name"].stringValue, phone: employee["phone"].stringValue, email: employee["email"].stringValue, picture: employee["picture"].stringValue, job_title: employee["job_title"].stringValue);
                                 childArray.append(child);
                             }
                         }
