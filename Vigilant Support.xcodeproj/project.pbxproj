@@ -238,6 +238,7 @@
 				024252B81D13162400C0DE09 /* Resources */,
 				063C877BCAFFE91EACAF50EB /* [CP] Embed Pods Frameworks */,
 				405BBB9A61C50F731F7CBA8C /* [CP] Copy Pods Resources */,
+				02EEC58D1D5A33180082DD07 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -365,6 +366,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		02EEC58D1D5A33180082DD07 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 53657aa7ae213dc3d35e0c6f92c1faf3548cf672 0dfee8a837ae105bd458987d9358d64240252507e2ea56b620436368a2eebe38";
+		};
 		063C877BCAFFE91EACAF50EB /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -576,7 +590,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;

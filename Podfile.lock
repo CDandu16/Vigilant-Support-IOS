@@ -1,18 +1,25 @@
 PODS:
   - Alamofire (3.4.1)
+  - Crashlytics (3.7.1):
+    - Fabric (~> 1.6.3)
   - EZSwiftExtensions (1.5)
+  - Fabric (1.6.7)
   - SwiftyJSON (2.3.2)
 
 DEPENDENCIES:
   - Alamofire
+  - Crashlytics
   - EZSwiftExtensions
+  - Fabric
   - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: 01a82e2f6c0f860ade35534c8dd88be61bdef40c
+  Crashlytics: 3cdd4c9655be68032a0cf0379e0fb5ef6af22cad
   EZSwiftExtensions: fe78d7d4ac34f5c8c36415d4acee49ba67c9732a
+  Fabric: caf7580c725e64db144f610ac65cd60956911dc7
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
 
-PODFILE CHECKSUM: 5c2916841322a8d2a38c8412061265ca54b31989
+PODFILE CHECKSUM: b9594e99d85fb7fdcd0f0d9c79228644a1c57ec4
 
 COCOAPODS: 1.0.1

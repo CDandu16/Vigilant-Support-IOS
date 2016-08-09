@@ -9,6 +9,7 @@
 import UIKit
 import Alamofire
 import SwiftyJSON
+import Crashlytics
 
 class updatePasswordController: UIViewController,UITextFieldDelegate {
     

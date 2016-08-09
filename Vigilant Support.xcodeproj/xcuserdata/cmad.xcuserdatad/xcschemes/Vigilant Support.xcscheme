@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "024252B91D13162400C0DE09"
-               BuildableName = "Vigilant Support.app"
+               BuildableName = "Vhub.app"
                BlueprintName = "Vigilant Support"
                ReferencedContainer = "container:Vigilant Support.xcodeproj">
             </BuildableReference>
@@ -53,7 +53,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "024252B91D13162400C0DE09"
-            BuildableName = "Vigilant Support.app"
+            BuildableName = "Vhub.app"
             BlueprintName = "Vigilant Support"
             ReferencedContainer = "container:Vigilant Support.xcodeproj">
          </BuildableReference>
@@ -76,7 +76,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "024252B91D13162400C0DE09"
-            BuildableName = "Vigilant Support.app"
+            BuildableName = "Vhub.app"
             BlueprintName = "Vigilant Support"
             ReferencedContainer = "container:Vigilant Support.xcodeproj">
          </BuildableReference>
@@ -95,7 +95,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "024252B91D13162400C0DE09"
-            BuildableName = "Vigilant Support.app"
+            BuildableName = "Vhub.app"
             BlueprintName = "Vigilant Support"
             ReferencedContainer = "container:Vigilant Support.xcodeproj">
          </BuildableReference>

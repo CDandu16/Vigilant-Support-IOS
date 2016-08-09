@@ -9,6 +9,7 @@
 import UIKit
 import Alamofire
 import SwiftyJSON
+import Crashlytics
 
 class loginController: UIViewController,UITextFieldDelegate {
     
@@ -64,13 +65,22 @@ class loginController: UIViewController,UITextFieldDelegate {
         }
     }
     
-    
+    @IBAction func crashButtonTapped(sender: AnyObject) {
+        Crashlytics.sharedInstance().crash()
+    }
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.emailInput.delegate = self;
         self.passwordInput.delegate = self;
         UIApplication.sharedApplication().statusBarStyle = .Default
+        let button = UIButton(type: UIButtonType.RoundedRect)
+        button.frame = CGRectMake(20, 50, 100, 30)
+        button.setTitle("Crash", forState: UIControlState.Normal)
+        button.addTarget(self, action: #selector(self.crashButtonTapped(_:)), forControlEvents: UIControlEvents.TouchUpInside)
+        view.addSubview(button)
+
         // Do any additional setup after loading the view, typically from a nib.
     }
     

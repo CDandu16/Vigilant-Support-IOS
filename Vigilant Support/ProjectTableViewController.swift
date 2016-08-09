@@ -10,6 +10,7 @@ import UIKit
 import EZSwiftExtensions
 import Alamofire
 import SwiftyJSON
+import Crashlytics
 
 class ProjectTableViewController: UITableViewController {
     /// The number of elements in the data source
