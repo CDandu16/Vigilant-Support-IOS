@@ -13,6 +13,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
 
+    func applicationDidFinishLaunching(application: UIApplication) {
+        NSThread.sleepForTimeInterval(1.0);
+    }
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         UINavigationBar.appearance().translucent = false;
         UINavigationBar.appearance().barTintColor = UIColor(red:0.23, green:0.35, blue:0.60, alpha:1.0)

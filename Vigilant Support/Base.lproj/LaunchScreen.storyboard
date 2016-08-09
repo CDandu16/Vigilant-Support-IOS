@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,7 +17,28 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vHub_transparent.png" translatesAutoresizingMaskIntoConstraints="NO" id="Fff-bO-d1f">
+                                <rect key="frame" x="20" y="95" width="560" height="124"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Powered by Vigilant Technologies" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fwg-PK-m6b">
+                                <rect key="frame" x="20" y="281" width="560" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Fff-bO-d1f" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="75" id="3Rk-G7-PYk"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Fff-bO-d1f" secondAttribute="leading" id="Frt-AV-Ppz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Fwg-PK-m6b" secondAttribute="trailing" id="UuI-X9-aTZ"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Fwg-PK-m6b" secondAttribute="leading" id="evR-bM-9Dz"/>
+                            <constraint firstItem="Fwg-PK-m6b" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="iFN-lU-yy9"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="Fff-bO-d1f" secondAttribute="bottom" constant="381" id="lN6-oP-sg8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Fff-bO-d1f" secondAttribute="trailing" id="uNe-Y3-bgs"/>
+                            <constraint firstItem="Fwg-PK-m6b" firstAttribute="top" secondItem="Fff-bO-d1f" secondAttribute="bottom" constant="62" id="xLT-aH-0m4"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -24,4 +46,7 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="vHub_transparent.png" width="776" height="319"/>
+    </resources>
 </document>

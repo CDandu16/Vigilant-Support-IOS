@@ -17,16 +17,15 @@
 		024252EE1D13171C00C0DE09 /* loginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024252ED1D13171C00C0DE09 /* loginController.swift */; };
 		02836B8B1D351ECC00B2518E /* Logo_Sans_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 02836B8A1D351ECC00B2518E /* Logo_Sans_background.png */; };
 		0285B2581D46A0BF003BD10A /* updatePasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0285B2571D46A0BF003BD10A /* updatePasswordController.swift */; };
-		02993A2A1D198288001C3615 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02993A291D198288001C3615 /* Project.swift */; };
-		02993A301D198747001C3615 /* projectModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02993A2F1D198747001C3615 /* projectModel.swift */; };
 		02993A361D19A1DF001C3615 /* GlobalV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02993A351D19A1DF001C3615 /* GlobalV.swift */; };
 		02993A3C1D19B2B9001C3615 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02993A3B1D19B2B9001C3615 /* Person.swift */; };
 		02C21A2D1D3A8FB900F453B2 /* ProjectTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C21A2C1D3A8FB900F453B2 /* ProjectTableViewController.swift */; };
 		02C21A2F1D3A94F300F453B2 /* PersonCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C21A2E1D3A94F300F453B2 /* PersonCardCell.swift */; };
 		02C21A311D3D04C600F453B2 /* LoadProjectController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C21A301D3D04C600F453B2 /* LoadProjectController.swift */; };
 		02C21A341D3D0C9500F453B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02C21A321D3D0C9500F453B2 /* Main.storyboard */; };
-		02EEAC911D3D15CD00E57B3A /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EEAC901D3D15CD00E57B3A /* FirstViewController.swift */; };
 		02EEAC951D3D644000E57B3A /* facebook-default-no-profile-pic (1).jpg in Resources */ = {isa = PBXBuildFile; fileRef = 02EEAC941D3D644000E57B3A /* facebook-default-no-profile-pic (1).jpg */; };
+		02EEC5871D58E6D90082DD07 /* vHub_transparent.png in Resources */ = {isa = PBXBuildFile; fileRef = 02EEC5861D58E6D90082DD07 /* vHub_transparent.png */; };
+		02EEC5891D58F82F0082DD07 /* Resized-CQXB7.png in Resources */ = {isa = PBXBuildFile; fileRef = 02EEC5881D58F82F0082DD07 /* Resized-CQXB7.png */; };
 		23CB331CF2F5DA8594EBE3FA /* Pods_Vigilant_SupportTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F93ACE17F68AE0361B7E85E /* Pods_Vigilant_SupportTests.framework */; };
 		7FCE3948B30BCE1B2E11F83C /* Pods_Vigilant_Support.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06EB92382890C87A936B7111 /* Pods_Vigilant_Support.framework */; };
 		8C11FB8E3852C60CB5BE1BA7 /* Pods_Vigilant_SupportUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A46E4C4098A8F01425A63DB5 /* Pods_Vigilant_SupportUITests.framework */; };
@@ -52,7 +51,7 @@
 /* Begin PBXFileReference section */
 		0200FB891D1AD5C500798AAA /* Parent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parent.swift; sourceTree = "<group>"; };
 		020F985F1D2FD9850083F237 /* subButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = subButton.swift; sourceTree = "<group>"; };
-		024252BA1D13162400C0DE09 /* Vigilant Support.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Vigilant Support.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		024252BA1D13162400C0DE09 /* Vhub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vhub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		024252BD1D13162400C0DE09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		024252C61D13162400C0DE09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		024252C91D13162400C0DE09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -66,16 +65,15 @@
 		024252ED1D13171C00C0DE09 /* loginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginController.swift; sourceTree = "<group>"; };
 		02836B8A1D351ECC00B2518E /* Logo_Sans_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Logo_Sans_background.png; path = ../../../../Downloads/Logo_Sans_background.png; sourceTree = "<group>"; };
 		0285B2571D46A0BF003BD10A /* updatePasswordController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = updatePasswordController.swift; sourceTree = "<group>"; };
-		02993A291D198288001C3615 /* Project.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
-		02993A2F1D198747001C3615 /* projectModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = projectModel.swift; sourceTree = "<group>"; };
 		02993A351D19A1DF001C3615 /* GlobalV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalV.swift; sourceTree = "<group>"; };
 		02993A3B1D19B2B9001C3615 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		02C21A2C1D3A8FB900F453B2 /* ProjectTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectTableViewController.swift; sourceTree = "<group>"; };
 		02C21A2E1D3A94F300F453B2 /* PersonCardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonCardCell.swift; sourceTree = "<group>"; };
 		02C21A301D3D04C600F453B2 /* LoadProjectController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadProjectController.swift; sourceTree = "<group>"; };
 		02C21A331D3D0C9500F453B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		02EEAC901D3D15CD00E57B3A /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		02EEAC941D3D644000E57B3A /* facebook-default-no-profile-pic (1).jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "facebook-default-no-profile-pic (1).jpg"; path = "../../../facebook-default-no-profile-pic (1).jpg"; sourceTree = "<group>"; };
+		02EEC5861D58E6D90082DD07 /* vHub_transparent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = vHub_transparent.png; path = ../../../../Downloads/vHub_transparent.png; sourceTree = "<group>"; };
+		02EEC5881D58F82F0082DD07 /* Resized-CQXB7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Resized-CQXB7.png"; path = "../../../../Downloads/Resized-CQXB7.png"; sourceTree = "<group>"; };
 		06EB92382890C87A936B7111 /* Pods_Vigilant_Support.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vigilant_Support.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F93ACE17F68AE0361B7E85E /* Pods_Vigilant_SupportTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vigilant_SupportTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C6BED6DE8750A5705B68B7B /* Pods-Vigilant SupportTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vigilant SupportTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Vigilant SupportTests/Pods-Vigilant SupportTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -130,7 +128,7 @@
 		024252BB1D13162400C0DE09 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				024252BA1D13162400C0DE09 /* Vigilant Support.app */,
+				024252BA1D13162400C0DE09 /* Vhub.app */,
 				024252D01D13162400C0DE09 /* Vigilant SupportTests.xctest */,
 				024252DB1D13162400C0DE09 /* Vigilant SupportUITests.xctest */,
 			);
@@ -140,25 +138,14 @@
 		024252BC1D13162400C0DE09 /* Vigilant Support */ = {
 			isa = PBXGroup;
 			children = (
+				02EEC58C1D5A2CEF0082DD07 /* Controllers */,
+				02EEC58B1D5A2CE10082DD07 /* Pictures */,
+				02EEC58A1D5A2CC70082DD07 /* Models */,
 				024252BD1D13162400C0DE09 /* AppDelegate.swift */,
 				02C21A321D3D0C9500F453B2 /* Main.storyboard */,
-				02EEAC941D3D644000E57B3A /* facebook-default-no-profile-pic (1).jpg */,
-				02C21A301D3D04C600F453B2 /* LoadProjectController.swift */,
-				02C21A2C1D3A8FB900F453B2 /* ProjectTableViewController.swift */,
-				02836B8A1D351ECC00B2518E /* Logo_Sans_background.png */,
-				020F985F1D2FD9850083F237 /* subButton.swift */,
 				024252C61D13162400C0DE09 /* Assets.xcassets */,
 				024252C81D13162400C0DE09 /* LaunchScreen.storyboard */,
 				024252CB1D13162400C0DE09 /* Info.plist */,
-				024252ED1D13171C00C0DE09 /* loginController.swift */,
-				02993A291D198288001C3615 /* Project.swift */,
-				02993A3B1D19B2B9001C3615 /* Person.swift */,
-				0200FB891D1AD5C500798AAA /* Parent.swift */,
-				02993A2F1D198747001C3615 /* projectModel.swift */,
-				02993A351D19A1DF001C3615 /* GlobalV.swift */,
-				02C21A2E1D3A94F300F453B2 /* PersonCardCell.swift */,
-				02EEAC901D3D15CD00E57B3A /* FirstViewController.swift */,
-				0285B2571D46A0BF003BD10A /* updatePasswordController.swift */,
 			);
 			path = "Vigilant Support";
 			sourceTree = "<group>";
@@ -179,6 +166,40 @@
 				024252E11D13162400C0DE09 /* Info.plist */,
 			);
 			path = "Vigilant SupportUITests";
+			sourceTree = "<group>";
+		};
+		02EEC58A1D5A2CC70082DD07 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				02C21A2E1D3A94F300F453B2 /* PersonCardCell.swift */,
+				020F985F1D2FD9850083F237 /* subButton.swift */,
+				02993A351D19A1DF001C3615 /* GlobalV.swift */,
+				0200FB891D1AD5C500798AAA /* Parent.swift */,
+				02993A3B1D19B2B9001C3615 /* Person.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		02EEC58B1D5A2CE10082DD07 /* Pictures */ = {
+			isa = PBXGroup;
+			children = (
+				02EEC5881D58F82F0082DD07 /* Resized-CQXB7.png */,
+				02EEC5861D58E6D90082DD07 /* vHub_transparent.png */,
+				02EEAC941D3D644000E57B3A /* facebook-default-no-profile-pic (1).jpg */,
+				02836B8A1D351ECC00B2518E /* Logo_Sans_background.png */,
+			);
+			name = Pictures;
+			sourceTree = "<group>";
+		};
+		02EEC58C1D5A2CEF0082DD07 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				02C21A301D3D04C600F453B2 /* LoadProjectController.swift */,
+				02C21A2C1D3A8FB900F453B2 /* ProjectTableViewController.swift */,
+				024252ED1D13171C00C0DE09 /* loginController.swift */,
+				0285B2571D46A0BF003BD10A /* updatePasswordController.swift */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 		60DA8520E620A4403ED3480D /* Frameworks */ = {
@@ -224,7 +245,7 @@
 			);
 			name = "Vigilant Support";
 			productName = "Vigilant Support";
-			productReference = 024252BA1D13162400C0DE09 /* Vigilant Support.app */;
+			productReference = 024252BA1D13162400C0DE09 /* Vhub.app */;
 			productType = "com.apple.product-type.application";
 		};
 		024252CF1D13162400C0DE09 /* Vigilant SupportTests */ = {
@@ -317,9 +338,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02EEC5891D58F82F0082DD07 /* Resized-CQXB7.png in Resources */,
 				024252CA1D13162400C0DE09 /* LaunchScreen.storyboard in Resources */,
 				024252C71D13162400C0DE09 /* Assets.xcassets in Resources */,
 				02836B8B1D351ECC00B2518E /* Logo_Sans_background.png in Resources */,
+				02EEC5871D58E6D90082DD07 /* vHub_transparent.png in Resources */,
 				02C21A341D3D0C9500F453B2 /* Main.storyboard in Resources */,
 				02EEAC951D3D644000E57B3A /* facebook-default-no-profile-pic (1).jpg in Resources */,
 			);
@@ -473,10 +496,7 @@
 				0285B2581D46A0BF003BD10A /* updatePasswordController.swift in Sources */,
 				024252BE1D13162400C0DE09 /* AppDelegate.swift in Sources */,
 				02993A3C1D19B2B9001C3615 /* Person.swift in Sources */,
-				02EEAC911D3D15CD00E57B3A /* FirstViewController.swift in Sources */,
 				020F98601D2FD9850083F237 /* subButton.swift in Sources */,
-				02993A2A1D198288001C3615 /* Project.swift in Sources */,
-				02993A301D198747001C3615 /* projectModel.swift in Sources */,
 				02C21A311D3D04C600F453B2 /* LoadProjectController.swift in Sources */,
 				02C21A2F1D3A94F300F453B2 /* PersonCardCell.swift in Sources */,
 				02993A361D19A1DF001C3615 /* GlobalV.swift in Sources */,
@@ -630,8 +650,8 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Vigilant Support/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.vigt.Vigilant-Support";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vigt.Vhub;
+				PRODUCT_NAME = Vhub;
 				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
@@ -645,8 +665,8 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Vigilant Support/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.vigt.Vigilant-Support";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vigt.Vhub;
+				PRODUCT_NAME = Vhub;
 				PROVISIONING_PROFILE = "";
 			};
 			name = Release;

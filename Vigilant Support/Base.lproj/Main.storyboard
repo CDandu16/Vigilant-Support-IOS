@@ -7,6 +7,22 @@
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
+        <scene sceneID="9ga-oL-W4x">
+            <objects>
+                <navigationController id="7tV-x2-P0g" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Sgy-mu-isy">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Xdg-YT-c4M" kind="relationship" relationship="rootViewController" id="JQ8-6Y-7I0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YqT-Fe-CtV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-314" y="-811"/>
+        </scene>
+        <!--Navigation Controller-->
         <scene sceneID="kIq-oU-oKS">
             <objects>
                 <navigationController id="acj-Vt-4Cj" sceneMemberID="viewController">
@@ -20,18 +36,18 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pdf-Db-rag" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="414" y="-310"/>
+            <point key="canvasLocation" x="456" y="-204"/>
         </scene>
         <!--Project Table View Controller-->
         <scene sceneID="ycJ-uM-Ayn">
             <objects>
-                <tableViewController id="Xdg-YT-c4M" customClass="ProjectTableViewController" customModule="Vigilant_Support" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="Xdg-YT-c4M" customClass="ProjectTableViewController" customModule="Vhub" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="34" sectionFooterHeight="30" id="wgf-Sw-DkN">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="cardViewCell" rowHeight="260" id="Tnj-og-I9y" customClass="PersonCardCell" customModule="Vigilant_Support" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="cardViewCell" rowHeight="260" id="Tnj-og-I9y" customClass="PersonCardCell" customModule="Vhub" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="98" width="600" height="260"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Tnj-og-I9y" id="Led-Qe-Fla">
@@ -41,14 +57,14 @@
                                         <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uMt-9d-43B">
                                             <rect key="frame" x="8" y="8" width="584" height="240"/>
                                             <subviews>
-                                                <button opaque="NO" tag="20" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0OV-xw-UVq" customClass="subclassedUIButton" customModule="Vigilant_Support" customModuleProvider="target">
+                                                <button opaque="NO" tag="20" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0OV-xw-UVq" customClass="subclassedUIButton" customModule="Vhub" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="200" width="194" height="40"/>
                                                     <color key="backgroundColor" red="0.23137254900000001" green="0.34901960780000002" blue="0.59607843140000005" alpha="1" colorSpace="calibratedRGB"/>
                                                     <state key="normal" title="Call">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                 </button>
-                                                <button opaque="NO" tag="10" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uJa-qr-yxd" customClass="subclassedUIButton" customModule="Vigilant_Support" customModuleProvider="target">
+                                                <button opaque="NO" tag="10" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uJa-qr-yxd" customClass="subclassedUIButton" customModule="Vhub" customModuleProvider="target">
                                                     <rect key="frame" x="194" y="200" width="196" height="40"/>
                                                     <color key="backgroundColor" red="0.23137254900000001" green="0.34901960780000002" blue="0.59607843140000005" alpha="1" colorSpace="calibratedRGB"/>
                                                     <state key="normal" title="Email">
@@ -75,7 +91,7 @@
                                                         </mask>
                                                     </variation>
                                                 </imageView>
-                                                <button opaque="NO" tag="30" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jav-hQ-Ekh" customClass="subclassedUIButton" customModule="Vigilant_Support" customModuleProvider="target">
+                                                <button opaque="NO" tag="30" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jav-hQ-Ekh" customClass="subclassedUIButton" customModule="Vhub" customModuleProvider="target">
                                                     <rect key="frame" x="390" y="200" width="194" height="40"/>
                                                     <color key="backgroundColor" red="0.23137254900000001" green="0.34901960780000002" blue="0.59607843140000005" alpha="1" colorSpace="calibratedRGB"/>
                                                     <state key="normal" title="Text">
@@ -134,15 +150,16 @@
                             </tableViewCell>
                         </prototypes>
                     </tableView>
+                    <navigationItem key="navigationItem" id="xHu-X2-AEl"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wkg-c2-tYh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1980" y="-310"/>
+            <point key="canvasLocation" x="1804" y="-214"/>
         </scene>
         <!--Login Controller-->
         <scene sceneID="zxU-9f-bic">
             <objects>
-                <viewController id="4YF-FI-OU7" customClass="loginController" customModule="Vigilant_Support" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="4YF-FI-OU7" customClass="loginController" customModule="Vhub" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Kqo-b6-1bz"/>
                         <viewControllerLayoutGuide type="bottom" id="IBE-M1-bcZ"/>
@@ -162,7 +179,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                             </textField>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo_Sans_background.png" translatesAutoresizingMaskIntoConstraints="NO" id="bXN-lC-bkL">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vHub_transparent.png" translatesAutoresizingMaskIntoConstraints="NO" id="bXN-lC-bkL">
                                 <rect key="frame" x="50" y="66" width="500" height="162"/>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hSn-AW-A7X">
@@ -211,6 +228,7 @@
                         <outlet property="passwordInput" destination="hSn-AW-A7X" id="WtL-6c-GNr"/>
                         <segue destination="acj-Vt-4Cj" kind="show" identifier="attempt" id="nZG-dn-Fia"/>
                         <segue destination="xRW-WS-gre" kind="presentation" identifier="new_password" id="qrH-1S-QAm"/>
+                        <segue destination="7tV-x2-P0g" kind="presentation" identifier="one_project" id="AXj-dM-zy5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dC2-yy-hfM" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -220,7 +238,7 @@
         <!--Update Password Controller-->
         <scene sceneID="EBt-wF-mGG">
             <objects>
-                <viewController id="xRW-WS-gre" customClass="updatePasswordController" customModule="Vigilant_Support" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="xRW-WS-gre" customClass="updatePasswordController" customModule="Vhub" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="lMS-ff-Lge"/>
                         <viewControllerLayoutGuide type="bottom" id="ed5-RO-0uG"/>
@@ -290,7 +308,7 @@
         <!--Load Project Controller-->
         <scene sceneID="JRa-eB-icn">
             <objects>
-                <tableViewController id="VlM-Vw-Geb" customClass="LoadProjectController" customModule="Vigilant_Support" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="VlM-Vw-Geb" customClass="LoadProjectController" customModule="Vhub" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="JvQ-PO-dtr">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -329,14 +347,15 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PgO-g3-wHQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1117" y="-310"/>
+            <point key="canvasLocation" x="1159" y="-940"/>
         </scene>
     </scenes>
     <resources>
-        <image name="Logo_Sans_background.png" width="979" height="362"/>
         <image name="facebook-default-no-profile-pic (1).jpg" width="1200" height="1200"/>
+        <image name="vHub_transparent.png" width="776" height="319"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="nZG-dn-Fia"/>
+        <segue reference="JQ8-6Y-7I0"/>
     </inferredMetricsTieBreakers>
 </document>
