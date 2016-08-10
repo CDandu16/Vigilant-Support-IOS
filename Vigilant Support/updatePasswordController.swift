@@ -21,7 +21,7 @@ class updatePasswordController: UIViewController,UITextFieldDelegate {
     @IBAction func changePassword(sender: AnyObject) {
         
         if(newPassword.text! == newPasswordCheck.text!){
-            Alamofire.request(.POST,"http://192.168.0.71:3000/api/authenticate/password",headers: ["x-access-token": GlobalV.token!],parameters: [ "id": GlobalV.email!, "password": self.newPassword.text!]).responseJSON{
+            Alamofire.request(.POST,"http://159.203.189.124:3000/api/authenticate/password",headers: ["x-access-token": GlobalV.token!],parameters: [ "id": GlobalV.email!, "password": self.newPassword.text!]).responseJSON{
                 response in if let JSONValues = response.result.value{
                     let json = JSON(JSONValues)
                     print(json);

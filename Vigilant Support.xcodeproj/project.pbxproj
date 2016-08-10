@@ -138,8 +138,9 @@
 		024252BC1D13162400C0DE09 /* Vigilant Support */ = {
 			isa = PBXGroup;
 			children = (
-				02EEC58C1D5A2CEF0082DD07 /* Controllers */,
 				02EEC58B1D5A2CE10082DD07 /* Pictures */,
+				02EEC58E1D5BA9190082DD07 /* Views */,
+				02EEC58C1D5A2CEF0082DD07 /* Controllers */,
 				02EEC58A1D5A2CC70082DD07 /* Models */,
 				024252BD1D13162400C0DE09 /* AppDelegate.swift */,
 				02C21A321D3D0C9500F453B2 /* Main.storyboard */,
@@ -171,8 +172,6 @@
 		02EEC58A1D5A2CC70082DD07 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				02C21A2E1D3A94F300F453B2 /* PersonCardCell.swift */,
-				020F985F1D2FD9850083F237 /* subButton.swift */,
 				02993A351D19A1DF001C3615 /* GlobalV.swift */,
 				0200FB891D1AD5C500798AAA /* Parent.swift */,
 				02993A3B1D19B2B9001C3615 /* Person.swift */,
@@ -200,6 +199,15 @@
 				0285B2571D46A0BF003BD10A /* updatePasswordController.swift */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		02EEC58E1D5BA9190082DD07 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				020F985F1D2FD9850083F237 /* subButton.swift */,
+				02C21A2E1D3A94F300F453B2 /* PersonCardCell.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 		60DA8520E620A4403ED3480D /* Frameworks */ = {

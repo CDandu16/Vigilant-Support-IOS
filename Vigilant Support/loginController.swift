@@ -35,7 +35,7 @@ class loginController: UIViewController,UITextFieldDelegate {
     @IBAction func LoginButton(sender: AnyObject) {
         let validLogin = isValidEmail(emailInput.text!)
         if validLogin {
-            Alamofire.request(.POST,"http://192.168.0.71:3000/api/authenticate",parameters: [ "email":  self.emailInput.text!, "password": self.passwordInput.text!]).responseJSON{
+            Alamofire.request(.POST,"http://159.203.189.124:3000/api/authenticate",parameters: [ "email":  self.emailInput.text!, "password": self.passwordInput.text!]).responseJSON{
                 response in
                 switch response.result{
                 case .Failure(_):
@@ -65,21 +65,11 @@ class loginController: UIViewController,UITextFieldDelegate {
         }
     }
     
-    @IBAction func crashButtonTapped(sender: AnyObject) {
-        Crashlytics.sharedInstance().crash()
-    }
-
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.emailInput.delegate = self;
         self.passwordInput.delegate = self;
         UIApplication.sharedApplication().statusBarStyle = .Default
-        let button = UIButton(type: UIButtonType.RoundedRect)
-        button.frame = CGRectMake(20, 50, 100, 30)
-        button.setTitle("Crash", forState: UIControlState.Normal)
-        button.addTarget(self, action: #selector(self.crashButtonTapped(_:)), forControlEvents: UIControlEvents.TouchUpInside)
-        view.addSubview(button)
 
         // Do any additional setup after loading the view, typically from a nib.
     }
