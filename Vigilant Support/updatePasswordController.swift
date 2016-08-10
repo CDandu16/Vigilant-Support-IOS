@@ -13,6 +13,19 @@ import Crashlytics
 
 class updatePasswordController: UIViewController,UITextFieldDelegate {
     
+    /// The number of elements in the data source
+    var total = 0
+    
+    // pasing data
+    var projectTitle: String?
+    var totalChild: Int = 0
+    var passingData = [Person]()
+    
+    /// The data source
+    var dataSource: [Parent] = []
+    
+    //The people
+    var person: [Person]!
     
     @IBOutlet weak var newPassword: UITextField!
     @IBOutlet weak var newPasswordCheck: UITextField!
@@ -26,10 +39,8 @@ class updatePasswordController: UIViewController,UITextFieldDelegate {
                     let json = JSON(JSONValues)
                     print(json);
                     let token = json["token"].stringValue
-                    //                let id = json["user_id"].stringValue;
-                    //                GlobalV.email = id;
                     GlobalV.token = token;
-                    self.performSegueWithIdentifier("updated", sender: self)
+                    self.loadProjects();
                 }
             }
         }else{
@@ -64,6 +75,48 @@ class updatePasswordController: UIViewController,UITextFieldDelegate {
         let result = range != nil ? true : false
         return result
     }
+    
+    func loadProjects(){
+        Alamofire.request(.GET,"http://159.203.189.124:3000/api/projects/project/"+GlobalV.email!,headers: ["x-access-token": GlobalV.token!]).responseJSON{
+            response in if let JSONValues = response.result.value{
+                let json = JSON(JSONValues)
+                if let projects = json["Projects"]["projects"].array{
+                    for project in projects {
+                        var childArray = [Person]();
+                        if let employees = project["Employees"].array{
+                            for employee in employees{
+                                let child = Person(name: employee["name"].stringValue, phone: employee["phone"].stringValue, email: employee["email"].stringValue, picture: employee["picture"].stringValue, job_title: employee["job_title"].stringValue);
+                                childArray.append(child);
+                            }
+                        }
+                        self.dataSource.append(Parent(childs: childArray, title: project["project_name"].stringValue))
+                    }
+                    self.total = self.dataSource.count
+                }
+            }
+            if (self.total == 1){
+                self.passingData = self.dataSource[0].childs
+                self.totalChild = self.dataSource[0].childs.count
+                self.projectTitle = self.dataSource[0].title
+                self.performSegueWithIdentifier("one_project_updated", sender: self)
+            }else{
+                self.performSegueWithIdentifier("updated", sender: self)
+            }
+        }
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if(segue.identifier == "one_project_updated"){
+            let navVc = segue.destinationViewController as! UINavigationController
+            let vc = navVc.viewControllers.first as! ProjectTableViewController
+            vc.dataSource = self.passingData
+            vc.total = self.totalChild
+            vc.projectTitle = self.projectTitle
+            print("hello")
+            print(vc.total)
+        }
+    }
+
     
     override func viewWillDisappear(animated: Bool) {
         super.viewWillDisappear(animated)

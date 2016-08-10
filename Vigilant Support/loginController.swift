@@ -99,7 +99,7 @@ class loginController: UIViewController,UITextFieldDelegate {
     }
     
     func loadProjects(){
-        Alamofire.request(.GET,"http://192.168.0.71:3000/api/projects/project/"+GlobalV.email!,headers: ["x-access-token": GlobalV.token!]).responseJSON{
+        Alamofire.request(.GET,"http://159.203.189.124:3000/api/projects/project/"+GlobalV.email!,headers: ["x-access-token": GlobalV.token!]).responseJSON{
             response in if let JSONValues = response.result.value{
                 let json = JSON(JSONValues)
                 if let projects = json["Projects"]["projects"].array{

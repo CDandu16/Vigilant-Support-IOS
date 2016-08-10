@@ -299,6 +299,7 @@
                         <outlet property="newPassword" destination="oqe-ZW-YWl" id="0eU-op-KyC"/>
                         <outlet property="newPasswordCheck" destination="sb4-Wl-CWC" id="Ufc-kN-7R6"/>
                         <segue destination="acj-Vt-4Cj" kind="presentation" identifier="updated" id="rFH-ca-MTh"/>
+                        <segue destination="7tV-x2-P0g" kind="presentation" identifier="one_project_updated" id="jAa-ld-FTY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VUY-f1-DD9" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -355,7 +356,8 @@
         <image name="vHub_transparent.png" width="776" height="319"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="nZG-dn-Fia"/>
+        <segue reference="jAa-ld-FTY"/>
+        <segue reference="rFH-ca-MTh"/>
         <segue reference="JQ8-6Y-7I0"/>
     </inferredMetricsTieBreakers>
 </document>
