@@ -104,13 +104,14 @@ class loginController: UIViewController,UITextFieldDelegate {
                 let json = JSON(JSONValues)
                 if let projects = json["Projects"]["projects"].array{
                     for project in projects {
-                        var childArray = [Person]();
+                        var childArray : [Person] = [];
                         if let employees = project["Employees"].array{
                             for employee in employees{
-                                let child = Person(name: employee["name"].stringValue, phone: employee["phone"].stringValue, email: employee["email"].stringValue, picture: employee["picture"].stringValue, job_title: employee["job_title"].stringValue);
+                                let child = Person(name: employee["name"].stringValue, phone: employee["phone"].stringValue, email: employee["email"].stringValue, picture: employee["picture"].stringValue, job_title: employee["job_title"].stringValue,rank: employee["rank"].intValue);
                                 childArray.append(child);
                             }
                         }
+                        childArray.sortInPlace({$0.0.rank < $0.1.rank});
                         self.dataSource.append(Parent(childs: childArray, title: project["project_name"].stringValue))
                     }
                     self.total = self.dataSource.count
