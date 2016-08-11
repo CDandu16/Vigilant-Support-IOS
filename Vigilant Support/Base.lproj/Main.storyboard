@@ -179,9 +179,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                             </textField>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vHub_transparent.png" translatesAutoresizingMaskIntoConstraints="NO" id="bXN-lC-bkL">
-                                <rect key="frame" x="50" y="66" width="500" height="162"/>
-                            </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hSn-AW-A7X">
                                 <rect key="frame" x="40" y="336" width="520" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -198,6 +195,9 @@
                                     <action selector="LoginButton:" destination="4YF-FI-OU7" eventType="touchUpInside" id="Ern-Sf-B0v"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vHub_Powered.png" translatesAutoresizingMaskIntoConstraints="NO" id="bXN-lC-bkL">
+                                <rect key="frame" x="20" y="66" width="560" height="162"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -210,16 +210,16 @@
                             <constraint firstItem="hSn-AW-A7X" firstAttribute="centerX" secondItem="lRd-qq-53a" secondAttribute="centerX" id="B8d-vY-pqn"/>
                             <constraint firstItem="H42-Yy-tmZ" firstAttribute="centerX" secondItem="lRd-qq-53a" secondAttribute="centerX" id="DCf-pi-Ciq"/>
                             <constraint firstAttribute="trailingMargin" secondItem="AOU-lB-ZiG" secondAttribute="trailing" constant="20" id="FZi-72-cSu"/>
-                            <constraint firstItem="bXN-lC-bkL" firstAttribute="leading" secondItem="lRd-qq-53a" secondAttribute="leadingMargin" constant="30" id="Mdl-no-cH1"/>
                             <constraint firstItem="IBE-M1-bcZ" firstAttribute="top" secondItem="AOU-lB-ZiG" secondAttribute="bottom" constant="163" id="RCd-9f-Qvs"/>
                             <constraint firstItem="hSn-AW-A7X" firstAttribute="leading" secondItem="lRd-qq-53a" secondAttribute="leadingMargin" constant="20" id="THg-3H-eIi"/>
                             <constraint firstItem="AOU-lB-ZiG" firstAttribute="centerX" secondItem="lRd-qq-53a" secondAttribute="centerX" id="XUb-YE-mSS"/>
                             <constraint firstAttribute="trailingMargin" secondItem="hSn-AW-A7X" secondAttribute="trailing" constant="20" id="bI1-0u-gkP"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="bXN-lC-bkL" secondAttribute="leading" id="fUA-H8-YzW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bXN-lC-bkL" secondAttribute="trailing" id="g4u-5h-vve"/>
                             <constraint firstItem="AOU-lB-ZiG" firstAttribute="leading" secondItem="lRd-qq-53a" secondAttribute="leadingMargin" constant="20" id="hHR-ZZ-5Gp"/>
                             <constraint firstItem="HXQ-gR-Tpi" firstAttribute="centerX" secondItem="lRd-qq-53a" secondAttribute="centerX" id="hNK-Ne-yth"/>
                             <constraint firstItem="IBE-M1-bcZ" firstAttribute="top" secondItem="H42-Yy-tmZ" secondAttribute="bottom" constant="285" id="mVI-1M-HwT"/>
                             <constraint firstItem="IBE-M1-bcZ" firstAttribute="top" secondItem="hSn-AW-A7X" secondAttribute="bottom" constant="234" id="ms5-s0-3iV"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="bXN-lC-bkL" secondAttribute="trailing" constant="30" id="zAJ-hw-urR"/>
                         </constraints>
                     </view>
                     <connections>
@@ -353,11 +353,11 @@
     </scenes>
     <resources>
         <image name="facebook-default-no-profile-pic (1).jpg" width="1200" height="1200"/>
-        <image name="vHub_transparent.png" width="776" height="319"/>
+        <image name="vHub_Powered.png" width="776" height="365"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="jAa-ld-FTY"/>
-        <segue reference="rFH-ca-MTh"/>
+        <segue reference="AXj-dM-zy5"/>
+        <segue reference="nZG-dn-Fia"/>
         <segue reference="JQ8-6Y-7I0"/>
     </inferredMetricsTieBreakers>
 </document>

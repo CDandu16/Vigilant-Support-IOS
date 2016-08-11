@@ -26,6 +26,7 @@
 		02EEAC951D3D644000E57B3A /* facebook-default-no-profile-pic (1).jpg in Resources */ = {isa = PBXBuildFile; fileRef = 02EEAC941D3D644000E57B3A /* facebook-default-no-profile-pic (1).jpg */; };
 		02EEC5871D58E6D90082DD07 /* vHub_transparent.png in Resources */ = {isa = PBXBuildFile; fileRef = 02EEC5861D58E6D90082DD07 /* vHub_transparent.png */; };
 		02EEC5891D58F82F0082DD07 /* Resized-CQXB7.png in Resources */ = {isa = PBXBuildFile; fileRef = 02EEC5881D58F82F0082DD07 /* Resized-CQXB7.png */; };
+		02EEC5901D5CEBC40082DD07 /* vHub_Powered.png in Resources */ = {isa = PBXBuildFile; fileRef = 02EEC58F1D5CEBC40082DD07 /* vHub_Powered.png */; };
 		23CB331CF2F5DA8594EBE3FA /* Pods_Vigilant_SupportTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F93ACE17F68AE0361B7E85E /* Pods_Vigilant_SupportTests.framework */; };
 		7FCE3948B30BCE1B2E11F83C /* Pods_Vigilant_Support.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06EB92382890C87A936B7111 /* Pods_Vigilant_Support.framework */; };
 		8C11FB8E3852C60CB5BE1BA7 /* Pods_Vigilant_SupportUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A46E4C4098A8F01425A63DB5 /* Pods_Vigilant_SupportUITests.framework */; };
@@ -74,6 +75,7 @@
 		02EEAC941D3D644000E57B3A /* facebook-default-no-profile-pic (1).jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "facebook-default-no-profile-pic (1).jpg"; path = "../../../facebook-default-no-profile-pic (1).jpg"; sourceTree = "<group>"; };
 		02EEC5861D58E6D90082DD07 /* vHub_transparent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = vHub_transparent.png; path = ../../../../Downloads/vHub_transparent.png; sourceTree = "<group>"; };
 		02EEC5881D58F82F0082DD07 /* Resized-CQXB7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Resized-CQXB7.png"; path = "../../../../Downloads/Resized-CQXB7.png"; sourceTree = "<group>"; };
+		02EEC58F1D5CEBC40082DD07 /* vHub_Powered.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = vHub_Powered.png; path = ../../../../Downloads/vHub_Powered.png; sourceTree = "<group>"; };
 		06EB92382890C87A936B7111 /* Pods_Vigilant_Support.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vigilant_Support.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F93ACE17F68AE0361B7E85E /* Pods_Vigilant_SupportTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vigilant_SupportTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C6BED6DE8750A5705B68B7B /* Pods-Vigilant SupportTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vigilant SupportTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Vigilant SupportTests/Pods-Vigilant SupportTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 		02EEC58B1D5A2CE10082DD07 /* Pictures */ = {
 			isa = PBXGroup;
 			children = (
+				02EEC58F1D5CEBC40082DD07 /* vHub_Powered.png */,
 				02EEC5881D58F82F0082DD07 /* Resized-CQXB7.png */,
 				02EEC5861D58E6D90082DD07 /* vHub_transparent.png */,
 				02EEAC941D3D644000E57B3A /* facebook-default-no-profile-pic (1).jpg */,
@@ -352,6 +355,7 @@
 				024252C71D13162400C0DE09 /* Assets.xcassets in Resources */,
 				02836B8B1D351ECC00B2518E /* Logo_Sans_background.png in Resources */,
 				02EEC5871D58E6D90082DD07 /* vHub_transparent.png in Resources */,
+				02EEC5901D5CEBC40082DD07 /* vHub_Powered.png in Resources */,
 				02C21A341D3D0C9500F453B2 /* Main.storyboard in Resources */,
 				02EEAC951D3D644000E57B3A /* facebook-default-no-profile-pic (1).jpg in Resources */,
 			);
