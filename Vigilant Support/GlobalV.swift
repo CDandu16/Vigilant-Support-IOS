@@ -13,6 +13,7 @@ import SwiftyJSON
 struct GlobalV {
     static var email:String?;
     static var token:String?;
+    static var admin:String?;
 }
 //func loadProjects(){
 //    print("hi")

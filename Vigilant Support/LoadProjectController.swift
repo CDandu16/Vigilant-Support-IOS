@@ -29,7 +29,12 @@ class LoadProjectController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Projects"
-        self.loadProjects()
+        if(GlobalV.admin == "YES"){
+            self.loadAdminProjects()
+        }else{
+            self.loadProjects()
+        }
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -41,6 +46,29 @@ class LoadProjectController: UITableViewController {
     //HOW DO I DO THIS
     func loadProjects(){
         Alamofire.request(.GET,"http://159.203.189.124:3000/api/projects/project/"+GlobalV.email!,headers: ["x-access-token": GlobalV.token!]).responseJSON{
+            response in if let JSONValues = response.result.value{
+                let json = JSON(JSONValues)
+                if let projects = json["Projects"]["projects"].array{
+                    for project in projects {
+                        var childArray : [Person] = [];
+                        if let employees = project["Employees"].array{
+                            for employee in employees{
+                                let child = Person(name: employee["name"].stringValue, phone: employee["phone"].stringValue, email: employee["email"].stringValue, picture: employee["picture"].stringValue, job_title: employee["job_title"].stringValue,rank: employee["rank"].intValue);
+                                childArray.append(child);
+                            }
+                        }
+                        childArray.sortInPlace({$0.0.rank < $0.1.rank});
+                        self.dataSource.append(Parent(childs: childArray, title: project["project_name"].stringValue))
+                    }
+                    self.total = self.dataSource.count
+                }
+            }
+            self.tableView.reloadData()
+        }
+    }
+    
+    func loadAdminProjects(){
+        Alamofire.request(.GET,"http://159.203.189.124:3000/api/projects/",headers: ["x-access-token": GlobalV.token!]).responseJSON{
             response in if let JSONValues = response.result.value{
                 let json = JSON(JSONValues)
                 if let projects = json["Projects"]["projects"].array{

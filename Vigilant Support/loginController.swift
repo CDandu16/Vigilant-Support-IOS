@@ -52,8 +52,10 @@ class loginController: UIViewController,UITextFieldDelegate {
                         print(json);
                         let token = json["token"].stringValue
                         let id = json["user_id"].stringValue;
+                        let admin_status = json["admin"].stringValue;
                         GlobalV.email = id;
                         GlobalV.token = token;
+                        GlobalV.admin = admin_status;
                         if json["first_time"].boolValue{
                             self.performSegueWithIdentifier("new_password", sender: self)
                         }else{
